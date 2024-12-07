@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Dec  7 23:21:52 2024
-# Process ID: 10260
+# Start of session at: Fri Dec  6 12:37:03 2024
+# Process ID: 22072
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7760 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2552 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,12 +17,15 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7516 MB
-# Total Virtual     :15893 MB
-# Available Virtual :6876 MB
+# Swap memory       :9750 MB
+# Total Virtual     :18128 MB
+# Available Virtual :2643 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -108,17 +111,13 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1453.562 ; gain = 392.816
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1465.570 ; gain = 423.945
+file mkdir C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new
+close [ open C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd w ]
+add_files C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd
 update_compile_order -fileset sources_1
-import_files -norecurse C:/Users/LENOVO/Downloads/practica_2/practica_2.srcs/sources_1/new/decoder.vhd
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-import_files -fileset sim_1 -norecurse C:/Users/LENOVO/Downloads/practica_2/practica_2.srcs/sim_1/new/decoder_tb.vhd
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 13:32:38 2024...
