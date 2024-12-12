@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Dec 12 17:23:39 2024
+# Process ID: 9844
+# Current directory: C:/Users/sergi/OneDrive/Desktop/Trabajo info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1
+# Command line: vivado.exe -log decodificador_moneda.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decodificador_moneda.tcl
+# Log file: C:/Users/sergi/OneDrive/Desktop/Trabajo info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/decodificador_moneda.vds
+# Journal file: C:/Users/sergi/OneDrive/Desktop/Trabajo info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-81MS265
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8376 MB
+# Swap memory       :7378 MB
+# Total Virtual     :15755 MB
+# Available Virtual :3208 MB
+#-----------------------------------------------------------
+source decodificador_moneda.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 487.629 ; gain = 202.129
+Command: synth_design -top decodificador_moneda -part xc7a100tcsg324-1
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-1293] The path 'C:/Users/sergi/OneDrive/Desktop/Trabajo info/Trabajo-SED/Trabajo_SED/Trabajo_SED.cache/wt' already exists, is a directory, but is not writable.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 17:23:51 2024...
