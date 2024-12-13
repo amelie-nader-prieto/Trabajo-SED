@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "devolver_el_dinero_tb_behav" "xil_defaultlib.devolver_el_dinero_tb" -log "elaborate.log" 
