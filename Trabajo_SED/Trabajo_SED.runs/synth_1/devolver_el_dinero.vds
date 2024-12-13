@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Dec 13 22:15:01 2024
+# Process ID: 17016
+# Current directory: C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1
+# Command line: vivado.exe -log devolver_el_dinero.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source devolver_el_dinero.tcl
+# Log file: C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/devolver_el_dinero.vds
+# Journal file: C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-81MS265
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8376 MB
+# Swap memory       :5905 MB
+# Total Virtual     :14282 MB
+# Available Virtual :3129 MB
+#-----------------------------------------------------------
+source devolver_el_dinero.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 487.668 ; gain = 200.719
+Command: synth_design -top devolver_el_dinero -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14348
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1359.516 ; gain = 448.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'devolver_el_dinero' [C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:23]
+ERROR: [Synth 8-26] attribute 'event not implemented [C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:33]
+ERROR: [Synth 8-285] failed synthesizing module 'devolver_el_dinero' [C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1468.500 ; gain = 557.344
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+8 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 13 22:15:27 2024...
