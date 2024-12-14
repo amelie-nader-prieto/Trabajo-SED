@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1'
+HD_PWD='C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -17,21 +17,26 @@ architecture Behavioral of devolver_el_dinero is
     signal current_state : states := reposo;
     signal next_state : states;
     signal dinero_restante : integer := 0;
+    signal cantidad_prev : integer := 0;
 
 begin
 
     state_reg : process(clk)
+    --variable cantidad_prev : integer := cantidad;
     begin
     if enable = '1' then
-        if rising_edge(clk) then current_state <= next_state;
+        if rising_edge(clk) then --current_state <= next_state;
+            if cantidad_prev /= cantidad then current_state <= entrada_cambiada; cantidad_prev <= cantidad;
+            else current_state <= next_state;
+            end if;
         end if;
     end if;
     end process;
     
-    nextstate_decod : process(current_state, cantidad)
+    nextstate_decod : process(current_state) --, cantidad)
     begin
-        if cantidad'event then next_state <= entrada_cambiada;
-        elsif current_state = reposo then
+        --if cantidad'event then next_state <= entrada_cambiada;       
+        if current_state = reposo then
             if dinero_restante >= 100 then next_state <= devolver100;
             elsif dinero_restante >= 50 then next_state <= devolver50;
             elsif dinero_restante >= 20 then next_state <= devolver20;
