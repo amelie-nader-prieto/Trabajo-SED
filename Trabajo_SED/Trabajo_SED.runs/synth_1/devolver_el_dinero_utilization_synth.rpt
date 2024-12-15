@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Sat Dec 14 20:59:58 2024
+| Date         : Sun Dec 15 12:02:52 2024
 | Host         : AMELIE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file devolver_el_dinero_utilization_synth.rpt -pb devolver_el_dinero_utilization_synth.pb
 | Design       : devolver_el_dinero
