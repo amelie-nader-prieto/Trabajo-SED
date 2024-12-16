@@ -21,14 +21,13 @@ type states is (reposo,
                 recibiendo_monedas,
                 devolviendo_el_dinero,
                 entregando_producto,
-                
                 calculando_precio,
                 operacion_cancelada,
                 producto_entregado);
                 
 signal current_state : states := reposo;
 signal next_state : states;
-signal precio : integer;
+signal precio : integer := 0;
 signal i_cantidad_a_devolver : integer := 0;
 
 begin
@@ -36,21 +35,21 @@ begin
     state_reg : process(clk)
     begin
         if rising_edge(clk) then
-            next_state <= current_state;
+            current_state <= next_state;
         end if;
     end process;
     
-    nextstate_decod : process(current_state) -- entradas
+    nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante)
     begin
         case current_state is
             when reposo =>
-                if SW = ("1000" or "0100" or "0010" or "0001") then next_state <= recibiendo_monedas;
+                if SW = "1000" or sw = "0100" or sw = "0010" or sw = "0001" then next_state <= recibiendo_monedas;
                 else next_state <= reposo;
                 end if;
                 
             when recibiendo_monedas =>
                 if reset = '1' then next_state <= operacion_cancelada;
-                elsif selec_producto = ("10" or "01") then next_state <= calculando_precio;
+                elsif selec_producto /= "00" then next_state <= calculando_precio;
                 else next_state <= recibiendo_monedas;
                 end if;
                 
@@ -66,7 +65,7 @@ begin
                 end if;
                 
             when entregando_producto =>
-                next_state <= reposo;
+                next_state <= producto_entregado;
             
             when operacion_cancelada =>
                 if (i_cantidad_a_devolver > 0) then next_state <= devolviendo_el_dinero;
@@ -122,7 +121,9 @@ begin
                     when "01" => producto <= "01";
                     when others => producto <="00";
                 end case;
-                precio <= 0;
+                --precio <= 0;
+                i_cantidad_a_devolver <= importe - precio; -- cuando se ha entregado el producto, se devuelve el dinero sobrante
+                
                 
             when operacion_cancelada =>
                 activar_contador <= '0'; devolver_dinero <= '0';
@@ -132,9 +133,8 @@ begin
                 
             when producto_entregado =>
                 activar_contador <= '0'; devolver_dinero <= '0';
-                i_cantidad_a_devolver <= importe - precio; -- cuando se ha entregado el producto, se devuelve el dinero sobrante
                 producto <= "00";
-                precio <= 0;
+                --precio <= 0;
             
         end case;
         
