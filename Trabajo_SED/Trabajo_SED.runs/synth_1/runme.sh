@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1'
+HD_PWD='C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log devolver_el_dinero.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source devolver_el_dinero.tcl
+EAStep vivado -log FSM_principal.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_principal.tcl

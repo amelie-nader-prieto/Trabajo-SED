@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log devolver_el_dinero.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source devolver_el_dinero.tcl" );
+         "-log FSM_principal.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_principal.tcl" );
 
 
 
