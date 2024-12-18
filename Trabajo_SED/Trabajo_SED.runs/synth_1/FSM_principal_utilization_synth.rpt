@@ -1,10 +1,17 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+<<<<<<< Updated upstream:Trabajo_SED/Trabajo_SED.runs/synth_1/FSM_principal_utilization_synth.rpt
 | Date         : Mon Dec 16 20:43:07 2024
 | Host         : DESKTOP-81MS265 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FSM_principal_utilization_synth.rpt -pb FSM_principal_utilization_synth.pb
 | Design       : FSM_principal
+=======
+| Date         : Sun Dec 15 18:37:23 2024
+| Host         : DESKTOP-81MS265 running 64-bit major release  (build 9200)
+| Command      : report_utilization -file devolver_el_dinero_utilization_synth.rpt -pb devolver_el_dinero_utilization_synth.pb
+| Design       : devolver_el_dinero
+>>>>>>> Stashed changes:Trabajo_SED/Trabajo_SED.runs/synth_1/devolver_el_dinero_utilization_synth.rpt
 | Device       : xc7a100tcsg324-1
 | Speed File   : -1
 | Design State : Synthesized
