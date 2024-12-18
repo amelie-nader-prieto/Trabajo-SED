@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" \
+
+# Do not sort compile order
+nosort

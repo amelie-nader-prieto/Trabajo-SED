@@ -1,17 +1,26 @@
-
-*** Running vivado
-    with args -log Parte_logica.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Parte_logica.tcl
-
-
-
-****** Vivado v2024.1 (64-bit)
-  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
-  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
-  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Dec 18 23:29:07 2024
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec 18 23:29:07 2024
+# Process ID: 19900
+# Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1
+# Command line: vivado.exe -log Parte_logica.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Parte_logica.tcl
+# Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/Parte_logica.vds
+# Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1\vivado.jou
+# Running On        :AMELIE
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8377 MB
+# Swap memory       :7502 MB
+# Total Virtual     :15879 MB
+# Available Virtual :3300 MB
+#-----------------------------------------------------------
 source Parte_logica.tcl -notrace
 create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 487.375 ; gain = 201.574
 Command: read_checkpoint -auto_incremental -incremental C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp
