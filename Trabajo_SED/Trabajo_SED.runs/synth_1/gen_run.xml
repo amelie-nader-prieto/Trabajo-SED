@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734378134" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/devolver_el_dinero.dcp">
   <File Type="PA-TCL" Name="FSM_principal.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="FSM_principal_drc_synth.rpt"/>
@@ -10,18 +9,6 @@
   <File Type="RDS-DCP" Name="FSM_principal.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="FSM_principal_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="FSM_principal_timing_summary_synth.pb"/>
-=======
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734284188" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/devolver_el_dinero.dcp">
-  <File Type="PA-TCL" Name="devolver_el_dinero.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="devolver_el_dinero_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="devolver_el_dinero_reports.tcl"/>
-  <File Type="RDS-RDS" Name="devolver_el_dinero.vds"/>
-  <File Type="RDS-UTIL" Name="devolver_el_dinero_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="devolver_el_dinero_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="devolver_el_dinero.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="devolver_el_dinero_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="devolver_el_dinero_timing_summary_synth.pb"/>
->>>>>>> Stashed changes
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FSM_principal.vhd">

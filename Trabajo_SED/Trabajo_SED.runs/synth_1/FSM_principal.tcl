@@ -4,11 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-<<<<<<< Updated upstream:Trabajo_SED/Trabajo_SED.runs/synth_1/FSM_principal.tcl
   variable script "C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/FSM_principal.tcl"
-=======
-  variable script "C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/devolver_el_dinero.tcl"
->>>>>>> Stashed changes:Trabajo_SED/Trabajo_SED.runs/synth_1/devolver_el_dinero.tcl
   variable category "vivado_synth"
 }
 
@@ -79,11 +75,7 @@ set_property ip_output_repo c:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Tra
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-<<<<<<< Updated upstream:Trabajo_SED/Trabajo_SED.runs/synth_1/FSM_principal.tcl
 read_vhdl -library xil_defaultlib C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd
-=======
-read_vhdl -library xil_defaultlib C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd
->>>>>>> Stashed changes:Trabajo_SED/Trabajo_SED.runs/synth_1/devolver_el_dinero.tcl
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
