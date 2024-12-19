@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/irene/Desktop/2023&amp;2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="964396d8ee3a40adb98be1c94a7d1968"/>
@@ -166,6 +166,24 @@
       <File Path="$PSRCDIR/sources_1/new/edgedtctr.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/entero_bcd.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sources_1/new/entero_bcd.vhd"/>
+          <Attr Name="ImportTime" Val="1734546454"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/top.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sources_1/new/top.vhd"/>
+          <Attr Name="ImportTime" Val="1734274964"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
