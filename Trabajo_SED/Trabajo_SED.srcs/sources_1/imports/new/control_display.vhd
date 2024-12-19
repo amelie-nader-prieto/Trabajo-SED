@@ -11,7 +11,7 @@ ENTITY control_display IS
         digsel  : OUT std_logic_vector(6 DOWNTO 0);       
         sele      : OUT std_logic_vector(2 DOWNTO 0)          
     );
-END ENTITY top;
+END ENTITY control_display;
 
 ARCHITECTURE Behavioral OF control_display IS
 
