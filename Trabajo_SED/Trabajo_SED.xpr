@@ -179,11 +179,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/top.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/new/control_display.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sources_1/new/top.vhd"/>
-          <Attr Name="ImportTime" Val="1734274964"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sources_1/new/control_display.vhd"/>
+          <Attr Name="ImportTime" Val="1734611126"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -247,6 +247,15 @@
       </File>
       <File Path="$PPRDIR/FSM_tb_behav.wcfg">
         <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/new/control_display_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sim_1/new/control_display_tb.vhd"/>
+          <Attr Name="ImportTime" Val="1734611277"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
