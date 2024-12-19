@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734560944" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/devolver_el_dinero.dcp">
   <File Type="PA-TCL" Name="Parte_logica.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Parte_logica_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Parte_logica_reports.tcl"/>
   <File Type="RDS-RDS" Name="Parte_logica.vds"/>
   <File Type="RDS-UTIL" Name="Parte_logica_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Parte_logica_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Parte_logica.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Parte_logica_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Parte_logica_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/CONTADOR_DE_MONEDAS.vhd">

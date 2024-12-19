@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 18 23:45:02 2024
-# Process ID: 11844
+# Start of session at: Thu Dec 19 13:51:19 2024
+# Process ID: 8388
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4512 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5780 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,9 +17,9 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7498 MB
-# Total Virtual     :15875 MB
-# Available Virtual :5505 MB
+# Swap memory       :7497 MB
+# Total Virtual     :15874 MB
+# Available Virtual :6987 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
@@ -108,13 +108,234 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/irene/Desktop/2023&2024/Info/Trabajo-SED/Trabajo_SED' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 1513.250 ; gain = 449.559
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 1498.973 ; gain = 436.871
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -top Parte_logica -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top Parte_logica -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9580
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1953.773 ; gain = 413.812
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'Parte_logica' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
+INFO: [Synth 8-3491] module 'FSM_principal' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:5' bound to instance 'FSM_Master' of component 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
+WARNING: [Synth 8-614] signal 'i_cantidad_a_devolver' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:42]
+WARNING: [Synth 8-614] signal 'selec_producto' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+WARNING: [Synth 8-614] signal 'importe' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+WARNING: [Synth 8-614] signal 'precio' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'FSM_principal' (1#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
+INFO: [Synth 8-3491] module 'devolver_el_dinero' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:5' bound to instance 'FSM_Slave' of component 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:24]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:36]
+WARNING: [Synth 8-614] signal 'cantidad' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'devolver_el_dinero' (2#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+INFO: [Synth 8-3491] module 'CONTADOR_DE_MONEDAS' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:3' bound to instance 'Contador' of component 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+INFO: [Synth 8-3491] module 'decodificador_moneda' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:14' bound to instance 'Inst_decodificador_moneda' of component 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'decodificador_moneda' (3#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-3491] module 'sumadordemonedas' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:5' bound to instance 'Inst_sumadordemonedas' of component 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sumadordemonedas' (4#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, actual width = 7 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (5#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element reset_contador_reg was removed.  [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'Parte_logica' (6#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.570 ; gain = 524.609
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Dec 19 13:55:15 2024
+| Host         : AMELIE running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+----------+--------------+----------+
+| Rule ID  | Severity | # Violations | # Waived |
++----------+----------+--------------+----------+
+| ASSIGN-6 | WARNING  | 1            | 0        |
+| ASSIGN-9 | WARNING  | 1            | 0        |
+| INFER-1  | WARNING  | 4            | 0        |
+| INFER-4  | WARNING  | 1            | 0        |
++----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-126] [ASSIGN-9]Some bits in IO 'cuenta' are not set. First unset bit index is 7. 
+RTL Name 'cuenta', Hierarchy 'CONTADOR_DE_MONEDAS', File 'CONTADOR_DE_MONEDAS.vhd', Line 22.
+WARNING: [Synth 37-88] [INFER-1]Inferred latch found for i_cantidad_a_devolver_reg. 
+RTL Name 'i_cantidad_a_devolver_reg', Hierarchy 'FSM_principal', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd', Line 91.
+WARNING: [Synth 37-88] [INFER-1]Inferred latch found for next_state_reg. 
+RTL Name 'next_state_reg', Hierarchy 'FSM_principal', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd', Line 38.
+WARNING: [Synth 37-88] [INFER-1]Inferred latch found for precio_reg. 
+RTL Name 'precio_reg', Hierarchy 'FSM_principal', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd', Line 92.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'reset_contador' was assigned but not read. 
+RTL Name 'reset_contador', Hierarchy 'Parte_logica', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd', Line 57.
+WARNING: [Synth 37-88] [INFER-1]Inferred latch found for dinero_restante_reg. 
+RTL Name 'dinero_restante_reg', Hierarchy 'devolver_el_dinero', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd', Line 55.
+WARNING: [Synth 37-113] [INFER-4]Combination loop detected on 'dinero_restante' at '0' bit. 
+Hierarchy 'devolver_el_dinero', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd', Line 19.
+INFO: [Synth 37-85] Total of 7 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.570 ; gain = 524.609
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.570 ; gain = 524.609
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Parte_logica
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2382.625 ; gain = 124.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Parte_logica' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
+INFO: [Synth 8-3491] module 'FSM_principal' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:5' bound to instance 'FSM_Master' of component 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
+WARNING: [Synth 8-614] signal 'i_cantidad_a_devolver' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:42]
+WARNING: [Synth 8-614] signal 'selec_producto' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+WARNING: [Synth 8-614] signal 'importe' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+WARNING: [Synth 8-614] signal 'precio' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'FSM_principal' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
+INFO: [Synth 8-3491] module 'devolver_el_dinero' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:5' bound to instance 'FSM_Slave' of component 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:24]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:36]
+WARNING: [Synth 8-614] signal 'cantidad' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'devolver_el_dinero' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+INFO: [Synth 8-3491] module 'CONTADOR_DE_MONEDAS' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:3' bound to instance 'Contador' of component 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+INFO: [Synth 8-3491] module 'decodificador_moneda' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:14' bound to instance 'Inst_decodificador_moneda' of component 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'decodificador_moneda' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-3491] module 'sumadordemonedas' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:5' bound to instance 'Inst_sumadordemonedas' of component 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sumadordemonedas' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, actual width = 7 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'Parte_logica' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
+WARNING: [Synth 8-6014] Unused sequential element reset_contador_reg was removed.  [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:97]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2494.188 ; gain = 235.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2494.188 ; gain = 235.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2494.188 ; gain = 235.719
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2494.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2608.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2631.883 ; gain = 373.414
+22 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2631.883 ; gain = 567.312
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2690.746 ; gain = 58.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Parte_logica' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
+INFO: [Synth 8-3491] module 'FSM_principal' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:5' bound to instance 'FSM_Master' of component 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
+WARNING: [Synth 8-614] signal 'i_cantidad_a_devolver' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:42]
+WARNING: [Synth 8-614] signal 'selec_producto' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+WARNING: [Synth 8-614] signal 'importe' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+WARNING: [Synth 8-614] signal 'precio' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'FSM_principal' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
+INFO: [Synth 8-3491] module 'devolver_el_dinero' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:5' bound to instance 'FSM_Slave' of component 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:24]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:36]
+WARNING: [Synth 8-614] signal 'cantidad' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'devolver_el_dinero' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+INFO: [Synth 8-3491] module 'CONTADOR_DE_MONEDAS' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:3' bound to instance 'Contador' of component 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+INFO: [Synth 8-3491] module 'decodificador_moneda' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:14' bound to instance 'Inst_decodificador_moneda' of component 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'decodificador_moneda' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-3491] module 'sumadordemonedas' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:5' bound to instance 'Inst_sumadordemonedas' of component 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sumadordemonedas' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, actual width = 7 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'Parte_logica' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2787.066 ; gain = 155.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2787.066 ; gain = 155.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2787.066 ; gain = 155.184
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2787.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2787.066 ; gain = 155.184
+close_design
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 23:47:01 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 13:57:55 2024...

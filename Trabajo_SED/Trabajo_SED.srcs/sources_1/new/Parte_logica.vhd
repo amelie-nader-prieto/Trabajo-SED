@@ -53,6 +53,9 @@ signal enable_contador : std_logic;
 signal enable_slave : std_logic;
 signal i_cantidad_a_devolver : integer;
 
+signal sw_contador : std_logic_vector(3 downto 0); -- entrada del contador
+signal reset_contador : std_logic; -- el contador se resetea a nivel BAJO
+
 begin
 FSM_Master : FSM_principal port map(
     SW => SW,
@@ -77,11 +80,23 @@ FSM_Slave : devolver_el_dinero port map(
 
 Contador : CONTADOR_DE_MONEDAS port map(
     clk => clk,
-    clr_n => reset,
+    clr_n => reset_contador,
     enable => enable_contador,
-    sw_in => sw,
+    sw_in => sw_contador,
     total => i_importe
 );
+
+reg_entrada_contador : process(clk)
+begin
+    if rising_edge(clk) then sw_contador <= sw;
+    end if;
+end process;
+
+reg_reset_contador : process(clk)
+begin
+    if rising_edge(clk) then reset_contador <= not reset;
+    end if;
+end process;
 
 importe <= i_importe;
 
