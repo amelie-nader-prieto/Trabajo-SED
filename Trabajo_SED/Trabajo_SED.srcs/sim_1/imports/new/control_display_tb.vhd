@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.Std_logic_1164.all;
 use IEEE.Numeric_Std.all;
 
-entity top_tb is
+entity control_display_tb is
 end;
 
-architecture bench of top_tb is
+architecture bench of control_display_tb is
 
   component top
       PORT (
