@@ -74,10 +74,7 @@ begin
                 next_state <= producto_entregado;
             
             when operacion_cancelada =>
-                if (i_cantidad_a_devolver > 0) then next_state <= devolviendo_el_dinero;
-                elsif (i_cantidad_a_devolver = 0) then next_state <= reposo;
-                else next_state <= operacion_cancelada;
-                end if;
+                next_state <= devolviendo_el_dinero;
             
             when producto_entregado =>
                 if (i_cantidad_a_devolver > 0) then next_state <= devolviendo_el_dinero;
