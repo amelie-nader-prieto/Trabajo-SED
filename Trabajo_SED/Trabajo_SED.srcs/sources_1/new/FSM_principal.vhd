@@ -21,7 +21,6 @@ type states is (reposo,
                 recibiendo_monedas,
                 devolviendo_el_dinero,
                 entregando_producto,
-                calculando_precio,
                 operacion_cancelada,
                 producto_entregado);
                 
@@ -49,16 +48,14 @@ begin
                 
             when recibiendo_monedas =>
                 if reset = '1' then next_state <= operacion_cancelada;
-                elsif selec_producto /= "00" then next_state <= calculando_precio;
+                -- Si se selecciona producto, calculamos el precio
+                elsif selec_producto /= "00" then
+                    -- Si el dinero introducido es suficiente, el siguiente paso es entregar el producto
+                    if (importe >= precio) then next_state <= entregando_producto;
+                    end if;
                 else next_state <= recibiendo_monedas;
                 end if;
-                
-            when calculando_precio =>
-                if precio = 0 then next_state <= calculando_precio;
-                elsif (importe < precio) then next_state <= recibiendo_monedas;
-                elsif (importe >= precio) then next_state <= entregando_producto; 
-                end if;
-                
+                                
             when devolviendo_el_dinero =>
                 if cantidad_restante = 0 then next_state <= reposo;
                 else next_state <= devolviendo_el_dinero;
@@ -94,18 +91,12 @@ begin
             when recibiendo_monedas =>
                 activar_contador <= '1'; devolver_dinero <= '0';
                 i_cantidad_a_devolver <= 0; producto <= "00";
-                precio <= 0;
-                
-            when calculando_precio =>
-                activar_contador <= '1'; devolver_dinero <= '0';
-                i_cantidad_a_devolver <= 0; producto <= "00";
-                -- calcular el precio del producto
-                -- en este caso hay dos productos, uno cuesta 1 euro y el otro 1.50
                 case selec_producto is
+                    when "00" => precio <= 0;
                     when "10" => precio <= 100;
                     when "01" => precio <= 150;
                     when others => precio <= 9999;
-                end case;
+                    end case;
                 
             when devolviendo_el_dinero =>
                 activar_contador <= '0'; devolver_dinero <= '1';

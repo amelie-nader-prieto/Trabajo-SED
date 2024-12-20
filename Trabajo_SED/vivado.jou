@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec 20 11:29:38 2024
-# Process ID: 17316
+# Start of session at: Fri Dec 20 11:41:23 2024
+# Process ID: 5884
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2968 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9804 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -19,16 +19,39 @@
 # Host memory       :8377 MB
 # Swap memory       :7491 MB
 # Total Virtual     :15868 MB
-# Available Virtual :5113 MB
+# Available Virtual :5045 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 update_compile_order -fileset sources_1
 launch_simulation
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+launch_simulation
+launch_simulation
+synth_design -top Parte_logica -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
 source Parte_logica_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/Parte_logica_tb/uut/FSM_Master/current_state}} 
+current_wave_config {Untitled 1}
+add_wave {{/Parte_logica_tb/uut/FSM_Master/next_state}} 
+current_wave_config {Untitled 1}
+add_wave {{/Parte_logica_tb/uut/FSM_Master/precio}} 
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+set_property xsim.view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg} [get_filesets sim_1]
 close_sim
 launch_simulation
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
 source Parte_logica_tb.tcl
 close_sim

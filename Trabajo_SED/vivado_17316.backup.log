@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 18 23:45:02 2024
-# Process ID: 11844
+# Start of session at: Fri Dec 20 11:29:38 2024
+# Process ID: 17316
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4512 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2968 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,9 +17,9 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7498 MB
-# Total Virtual     :15875 MB
-# Available Virtual :5505 MB
+# Swap memory       :7491 MB
+# Total Virtual     :15868 MB
+# Available Virtual :5113 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
@@ -114,7 +114,137 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 1513.250 ; gain = 449.559
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:14 . Memory (MB): peak = 1516.750 ; gain = 446.672
 update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+source Parte_logica_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1566.746 ; gain = 24.234
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+source Parte_logica_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1571.234 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 23:47:01 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 11:41:03 2024...

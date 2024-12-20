@@ -6,9 +6,9 @@ ENTITY pulsadores IS
     PORT ( 
         CLK: IN std_logic ;
         pulsador: in std_logic ;
-        salida_pulsador: out std_logic ;
+        salida_pulsador: out std_logic
 ); 
-END top; 
+END pulsadores;
 
 architecture Behavioral of pulsadores is
 

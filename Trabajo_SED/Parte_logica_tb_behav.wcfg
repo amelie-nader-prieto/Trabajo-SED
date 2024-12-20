@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Parte_logica_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Parte_logica_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="275.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="895.501 ns"></ZoomEndTime>
+      <Cursor1Time time="575.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="134"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/Parte_logica_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/importe" type="other">
+      <obj_property name="ElementShortName">importe</obj_property>
+      <obj_property name="ObjectShortName">importe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/selec_prod" type="array">
+      <obj_property name="ElementShortName">selec_prod[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selec_prod[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/producto" type="array">
+      <obj_property name="ElementShortName">producto[1:0]</obj_property>
+      <obj_property name="ObjectShortName">producto[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/devolver_dinero" type="array">
+      <obj_property name="ElementShortName">devolver_dinero[3:0]</obj_property>
+      <obj_property name="ObjectShortName">devolver_dinero[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/precio" type="other">
+      <obj_property name="ElementShortName">precio</obj_property>
+      <obj_property name="ObjectShortName">precio</obj_property>
+   </wvobject>
+</wave_config>

@@ -6,9 +6,9 @@ ENTITY boton_reset IS
     PORT ( 
         CLK: IN std_logic ;
         reset: in std_logic ;
-        salida_reset: out std_logic ;
+        salida_reset: out std_logic
 ); 
-END top; 
+END boton_reset; 
 
 architecture Behavioral of boton_reset is
 

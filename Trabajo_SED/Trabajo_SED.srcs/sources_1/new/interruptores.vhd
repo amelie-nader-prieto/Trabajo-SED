@@ -5,7 +5,6 @@ entity interruptores is
   Port (
         clk:in std_logic;
         interruptor_asyn: in std_logic_vector;
-        
         interruptor_syn: out std_logic_vector
 );
 end interruptores;
