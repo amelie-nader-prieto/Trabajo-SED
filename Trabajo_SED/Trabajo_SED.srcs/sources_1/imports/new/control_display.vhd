@@ -6,9 +6,11 @@ ENTITY control_display IS
     PORT (
         clk       : IN std_logic;                             
         rst       : IN std_logic;                             
-        numero    : IN integer ;                
+        numero    : IN integer ;  
+        enable    : in std_logic;               
         segmentos : OUT std_logic_vector(6 DOWNTO 0);        
-        sele      : OUT std_logic_vector(2 DOWNTO 0)          
+        sele      : OUT std_logic_vector(2 DOWNTO 0)   
+             
     );
 END ENTITY control_display;
 
@@ -22,6 +24,7 @@ ARCHITECTURE Behavioral OF control_display IS
         PORT (
             clk    : IN std_logic;
             rst    : IN std_logic;
+            enable: In std_logic;
             entero : IN integer;
             bcd    : OUT std_logic_vector(11 DOWNTO 0)
         );
@@ -40,6 +43,7 @@ BEGIN
         PORT MAP (
             clk    => clk,
             rst    => rst,
+            enable=>enable,
             entero => numero,
             bcd    => bcd_out
         );
