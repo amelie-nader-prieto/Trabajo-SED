@@ -28,11 +28,27 @@ architecture Behavioral of Parte_logica_tb is
 
 begin
 
-    clk <= not clk after 10ns;
+    uut : Parte_logica port map(
+        sw => sw,
+        clk => clk,
+        reset => reset,
+        importe => importe,
+        selec_producto => selec_prod,
+        producto => producto,
+        devolver_dinero => devolver_dinero
+        );
+
+    clk <= not clk after 25ns;
     
     stimuli : process
     begin
-    wait for 1000ns;
+        wait for 125ns;
+        -- Comprobamos si se activa el contador
+        sw <= "1000";    
+        wait for 50ns;
+        sw <= "0000"; -- al hacer esto no debería cambiar de estado.
+        wait for 50ns;
+        wait for 1000ns;
     end process;    
 
 end Behavioral;

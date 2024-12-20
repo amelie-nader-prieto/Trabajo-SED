@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 19 13:51:19 2024
-# Process ID: 8388
+# Start of session at: Fri Dec 20 10:55:42 2024
+# Process ID: 11204
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5780 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13116 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,12 +17,15 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7497 MB
-# Total Virtual     :15874 MB
-# Available Virtual :6987 MB
+# Swap memory       :7491 MB
+# Total Virtual     :15868 MB
+# Available Virtual :5731 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -108,18 +111,10 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/irene/Desktop/2023&2024/Info/Trabajo-SED/Trabajo_SED' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 1498.973 ; gain = 436.871
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+open_project: Time (s): cpu = 00:00:41 ; elapsed = 00:00:23 . Memory (MB): peak = 1507.523 ; gain = 469.645
 update_compile_order -fileset sources_1
 synth_design -top Parte_logica -part xc7a100tcsg324-1 -lint 
 Command: synth_design -top Parte_logica -part xc7a100tcsg324-1 -lint
@@ -128,9 +123,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9580
+INFO: [Synth 8-7075] Helper process launched with PID 1376
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1953.773 ; gain = 413.812
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1928.090 ; gain = 420.566
 ---------------------------------------------------------------------------------
 Clean up Linter database...
 INFO: [Synth 8-638] synthesizing module 'Parte_logica' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
@@ -160,15 +155,14 @@ INFO: [Synth 8-256] done synthesizing module 'sumadordemonedas' (4#1) [C:/Users/
 WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, actual width = 7 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (5#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
 WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:86]
-WARNING: [Synth 8-6014] Unused sequential element reset_contador_reg was removed.  [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:97]
 INFO: [Synth 8-256] done synthesizing module 'Parte_logica' (6#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.570 ; gain = 524.609
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2043.953 ; gain = 536.430
 ---------------------------------------------------------------------------------
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Dec 19 13:55:15 2024
+| Date         : Fri Dec 20 10:58:09 2024
 | Host         : AMELIE running 64-bit major release  (build 9200)
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -184,7 +178,6 @@ Table of Contents
 +----------+----------+--------------+----------+
 | Rule ID  | Severity | # Violations | # Waived |
 +----------+----------+--------------+----------+
-| ASSIGN-6 | WARNING  | 1            | 0        |
 | ASSIGN-9 | WARNING  | 1            | 0        |
 | INFER-1  | WARNING  | 4            | 0        |
 | INFER-4  | WARNING  | 1            | 0        |
@@ -199,19 +192,17 @@ WARNING: [Synth 37-88] [INFER-1]Inferred latch found for next_state_reg.
 RTL Name 'next_state_reg', Hierarchy 'FSM_principal', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd', Line 38.
 WARNING: [Synth 37-88] [INFER-1]Inferred latch found for precio_reg. 
 RTL Name 'precio_reg', Hierarchy 'FSM_principal', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd', Line 92.
-WARNING: [Synth 37-93] [ASSIGN-6]Signal 'reset_contador' was assigned but not read. 
-RTL Name 'reset_contador', Hierarchy 'Parte_logica', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd', Line 57.
 WARNING: [Synth 37-88] [INFER-1]Inferred latch found for dinero_restante_reg. 
 RTL Name 'dinero_restante_reg', Hierarchy 'devolver_el_dinero', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd', Line 55.
 WARNING: [Synth 37-113] [INFER-4]Combination loop detected on 'dinero_restante' at '0' bit. 
 Hierarchy 'devolver_el_dinero', File 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd', Line 19.
-INFO: [Synth 37-85] Total of 7 linter message(s) generated.
+INFO: [Synth 37-85] Total of 6 linter message(s) generated.
 INFO: [Synth 37-45] Linter Run Finished!
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.570 ; gain = 524.609
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2043.953 ; gain = 536.430
 INFO: [Common 17-83] Releasing license: Synthesis
-24 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+24 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.570 ; gain = 524.609
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.953 ; gain = 536.430
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
 Starting synth_design
@@ -221,7 +212,7 @@ INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2382.625 ; gain = 124.156
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2354.254 ; gain = 122.441
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Parte_logica' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
 INFO: [Synth 8-3491] module 'FSM_principal' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:5' bound to instance 'FSM_Master' of component 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:60]
@@ -251,91 +242,486 @@ WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, a
 INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
 WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:86]
 INFO: [Synth 8-256] done synthesizing module 'Parte_logica' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
-WARNING: [Synth 8-6014] Unused sequential element reset_contador_reg was removed.  [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:97]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2494.188 ; gain = 235.719
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2465.371 ; gain = 233.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2494.188 ; gain = 235.719
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2465.371 ; gain = 233.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2494.188 ; gain = 235.719
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2465.371 ; gain = 233.559
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2494.188 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2465.371 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {clk];
+
+
+##Switches
+
+#set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { SW[0] }]; #IO_L24N_T3_RS0_1 ... (truncated) ' found in constraint file. [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:8]
 Finished Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2608.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2565.371 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2631.883 ; gain = 373.414
-22 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2593.871 ; gain = 362.059
+22 Infos, 11 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2631.883 ; gain = 567.312
-refresh_design
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2690.746 ; gain = 58.863
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Parte_logica' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
-INFO: [Synth 8-3491] module 'FSM_principal' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:5' bound to instance 'FSM_Master' of component 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'FSM_principal' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
-WARNING: [Synth 8-614] signal 'i_cantidad_a_devolver' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:42]
-WARNING: [Synth 8-614] signal 'selec_producto' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
-WARNING: [Synth 8-614] signal 'importe' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
-WARNING: [Synth 8-614] signal 'precio' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'FSM_principal' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:18]
-INFO: [Synth 8-3491] module 'devolver_el_dinero' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:5' bound to instance 'FSM_Slave' of component 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'devolver_el_dinero' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:24]
-WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:36]
-WARNING: [Synth 8-614] signal 'cantidad' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
-WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'devolver_el_dinero' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
-INFO: [Synth 8-3491] module 'CONTADOR_DE_MONEDAS' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:3' bound to instance 'Contador' of component 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'CONTADOR_DE_MONEDAS' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
-INFO: [Synth 8-3491] module 'decodificador_moneda' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:14' bound to instance 'Inst_decodificador_moneda' of component 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'decodificador_moneda' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'decodificador_moneda' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
-INFO: [Synth 8-3491] module 'sumadordemonedas' declared at 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:5' bound to instance 'Inst_sumadordemonedas' of component 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'sumadordemonedas' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'sumadordemonedas' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
-WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, actual width = 7 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
-WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'Parte_logica' (0#1) [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd:17]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2787.066 ; gain = 155.184
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2787.066 ; gain = 155.184
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2787.066 ; gain = 155.184
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2787.066 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
-Finished Parsing XDC File [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
-Completed Processing XDC Constraints
-
-refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2787.066 ; gain = 155.184
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2593.871 ; gain = 549.918
 close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\FSM_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+WARNING: Simulation object /FSM_tb/SW was not found in the design.
+WARNING: Simulation object /FSM_tb/activar_contador was not found in the design.
+WARNING: Simulation object /FSM_tb/devolver_dinero was not found in the design.
+WARNING: Simulation object /FSM_tb/RESET was not found in the design.
+WARNING: Simulation object /FSM_tb/selec_producto was not found in the design.
+WARNING: Simulation object /FSM_tb/clk was not found in the design.
+WARNING: Simulation object /FSM_tb/importe was not found in the design.
+WARNING: Simulation object /FSM_tb/cantidad_restante was not found in the design.
+WARNING: Simulation object /FSM_tb/cantidad_a_devolver was not found in the design.
+WARNING: Simulation object /FSM_tb/entregar_producto was not found in the design.
+WARNING: Simulation object /FSM_tb/devolver_monedas was not found in the design.
+WARNING: Simulation object /FSM_tb/Master/precio was not found in the design.
+WARNING: Simulation object /FSM_tb/Master/next_state was not found in the design.
+source Parte_logica_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2610.160 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+WARNING: Simulation object /FSM_tb/SW was not found in the design.
+WARNING: Simulation object /FSM_tb/activar_contador was not found in the design.
+WARNING: Simulation object /FSM_tb/devolver_dinero was not found in the design.
+WARNING: Simulation object /FSM_tb/RESET was not found in the design.
+WARNING: Simulation object /FSM_tb/selec_producto was not found in the design.
+WARNING: Simulation object /FSM_tb/clk was not found in the design.
+WARNING: Simulation object /FSM_tb/importe was not found in the design.
+WARNING: Simulation object /FSM_tb/cantidad_restante was not found in the design.
+WARNING: Simulation object /FSM_tb/cantidad_a_devolver was not found in the design.
+WARNING: Simulation object /FSM_tb/entregar_producto was not found in the design.
+WARNING: Simulation object /FSM_tb/devolver_monedas was not found in the design.
+WARNING: Simulation object /FSM_tb/Master/precio was not found in the design.
+WARNING: Simulation object /FSM_tb/Master/next_state was not found in the design.
+source Parte_logica_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2610.160 ; gain = 0.000
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/sw}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/clk}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/reset}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/importe}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/selec_producto}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/producto}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/devolver_dinero}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/enable_contador}} 
+current_wave_config {FSM_tb_behav.wcfg}
+FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/enable_slave}} 
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2610.160 ; gain = 0.000
+current_wave_config {FSM_tb_behav.wcfg}
+C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Master/current_state}} 
+current_wave_config {FSM_tb_behav.wcfg}
+C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Master/next_state}} 
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\Parte_logica.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2610.160 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 13:57:55 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 11:28:53 2024...
