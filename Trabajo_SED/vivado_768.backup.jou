@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 18 23:21:33 2024
-# Process ID: 3840
+# Start of session at: Fri Dec 20 12:10:27 2024
+# Process ID: 768
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10544 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19284 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,33 +17,22 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7503 MB
-# Total Virtual     :15880 MB
-# Available Virtual :4652 MB
+# Swap memory       :7491 MB
+# Total Virtual     :15868 MB
+# Available Virtual :4420 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 update_compile_order -fileset sources_1
-synth_design -top Parte_logica -part xc7a100tcsg324-1 -lint 
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-open_run synth_1 -name synth_1
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_design
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd
-update_compile_order -fileset sim_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top Parte_logica_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top pulsadores [current_fileset]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg
-source Parte_logica_tb.tcl
-close_sim
+update_compile_order -fileset sources_1
+synth_design -top pulsadores -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top pulsadores -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
