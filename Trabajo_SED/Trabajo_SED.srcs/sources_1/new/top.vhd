@@ -7,7 +7,7 @@ entity top is
         clk       : IN std_logic;                             
         rst       : IN std_logic;                             
         interruptor:in std_logic_vector (3 downto 0);
-        pulsadores:in std_logic_vector (1 downto 0);
+        in_pulsadores:in std_logic_vector (1 downto 0);
         selec:out std_logic_vector (2 downto 0);
         digsel:out std_logic_vector (6 downto 0);
         entrega_producto:out std_logic_vector(1 downto 0);
@@ -50,20 +50,18 @@ END COMPONENT;
         interruptor_syn: out std_logic_vector         
 );
 END COMPONENT;  
-COMPONENT FSM_principal
-    PORT (
-       SW : in STD_LOGIC_VECTOR (3 downto 0);
-           RESET : in STD_LOGIC;
+
+component FSM is
+    Port ( sw : in STD_LOGIC_VECTOR (3 downto 0);
+           clk : in std_logic;
+           reset : in STD_LOGIC;
            selec_producto : in STD_LOGIC_VECTOR (1 downto 0);
-           importe : in integer; -- salida del contador, indica cuánto dinero se ha introducido
-           CLK : in STD_LOGIC;
-           
-           activar_contador : out STD_LOGIC; -- para activar o desactivar el contador
-           devolver_dinero : out STD_LOGIC; -- para activar o desactivar la FSM de devolver el dinero
-         
-           producto : out STD_LOGIC_VECTOR (1 downto 0) -- LEDs de la placa 
-);
-END COMPONENT; 
+           importe : in integer;
+           activar_contador : out STD_LOGIC;
+           entregar_producto : out STD_LOGIC_VECTOR (1 downto 0);
+           devolver_monedas : out STD_LOGIC_VECTOR (3 downto 0));
+end component;
+
 COMPONENT CONTADOR_DE_MONEDAS
     PORT (
       clk, clr_n, enable: in std_logic ;
@@ -104,16 +102,16 @@ begin
         interruptor_asyn=>interruptor,
         interruptor_syn=> int_sync   
         );
-  Inst_FSM_principal: FSM_principal
+  Inst_FSM: FSM
         PORT MAP (
-          SW =>int_sync,
+           SW =>int_sync,
            RESET =>reset,
            selec_producto =>puls,
            importe =>imp_tot,
            CLK =>clk,           
            activar_contador =>act_cont,
-           devolver_ =>devolver_monedas,
-           producto=>entrega_producto
+           entregar_producto=>entrega_producto,
+           devolver_monedas => devolver_monedas
            );
    Inst_CONTADOR_DE_MONEDAS: CONTADOR_DE_MONEDAS 
    PORT MAP (
@@ -127,7 +125,7 @@ begin
       PORT MAP (
          
         CLK=>clk,
-        pulsador=>pulsadores,
+        pulsador=>in_pulsadores,
         salida_pulsador=>puls
                                                                 
         );
