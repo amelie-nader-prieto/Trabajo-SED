@@ -5,14 +5,14 @@ use IEEE.std_logic_1164.ALL;
 ENTITY pulsadores IS 
     PORT ( 
         CLK: IN std_logic ;
-        pulsador: in std_logic ;
-        salida_pulsador: out std_logic
+        pulsador: in std_logic_vector(1 downto 0);
+        salida_pulsador: out std_logic_vector(1 downto 0)
 ); 
 END pulsadores;
 
 architecture Behavioral of pulsadores is
 
-    signal sync_i: std_logic ;
+    signal sync_i: std_logic_vector(1 downto 0); -- salidas sincronizadas
     
 
     COMPONENT SYNCHRNZR
@@ -33,16 +33,27 @@ architecture Behavioral of pulsadores is
 
     begin 
 
-    Inst_SYNCHRNZR: SYNCHRNZR PORT MAP(
+    Inst_SYNCHRNZR_1: SYNCHRNZR PORT MAP(
         clk=>clk,
-        ASYNC_IN=> pulsador,
-        SYNC_OUT=> sync_i
+        ASYNC_IN => pulsador(1),
+        SYNC_OUT => sync_i(1)
+    );
+    Inst_SYNCHRNZR_2: SYNCHRNZR PORT MAP(
+        clk=>clk,
+        ASYNC_IN => pulsador(0),
+        SYNC_OUT => sync_i(0)
     );
 
-    Inst_EDGEDTCTR: edgedtctr PORT MAP(
+    Inst_EDGEDTCTR_1: edgedtctr PORT MAP(
         clk =>clk,
-        SYNC_IN=>sync_i,
-        edge=>salida_pulsador
+        SYNC_IN => sync_i(1),
+        edge => salida_pulsador(1)
+    );
+    
+    Inst_EDGEDTCTR_2: edgedtctr PORT MAP(
+        clk =>clk,
+        SYNC_IN => sync_i(0),
+        edge => salida_pulsador(0)
     ); 
 
 end behavioral;
