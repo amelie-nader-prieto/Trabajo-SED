@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Dec 20 12:19:58 2024
+# Process ID: 17716
+# Current directory: C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10852 C:\Users\sergi\Downloads\SED\Lab\Lab_sed\Trabajo\Trabajo_SED\Trabajo_SED.xpr
+# Log file: C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/vivado.log
+# Journal file: C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED\vivado.jou
+# Running On        :DESKTOP-81MS265
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8376 MB
+# Swap memory       :6174 MB
+# Total Virtual     :14550 MB
+# Available Virtual :6381 MB
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.xprupdate_compile_ordelaunch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_compile_order -fileset sources_1

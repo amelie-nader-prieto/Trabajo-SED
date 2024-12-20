@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734693650" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/devolver_el_dinero.dcp">
   <File Type="PA-TCL" Name="pulsadores.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="pulsadores_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="pulsadores_reports.tcl"/>
   <File Type="RDS-RDS" Name="pulsadores.vds"/>
   <File Type="RDS-UTIL" Name="pulsadores_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="pulsadores_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="pulsadores.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="pulsadores_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="pulsadores_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/SYNCHRNZR.vhd">

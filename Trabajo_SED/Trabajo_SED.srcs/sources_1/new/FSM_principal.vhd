@@ -27,6 +27,7 @@ type states is (reposo,
 signal current_state : states := reposo;
 signal next_state : states;
 signal precio : integer := 0; -- precio del producto (0 cuando no se ha seleccionado ningún producto)
+signal producto_seleccionado : std_logic_vector(1 downto 0); -- info del producto seleccionado
 signal i_cantidad_a_devolver : integer := 0;
 
 begin
@@ -39,6 +40,7 @@ begin
     end process;
     
     nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante)
+        variable vprecio : integer;
     begin
         case current_state is
             when reposo =>
@@ -50,8 +52,15 @@ begin
                 if reset = '1' then next_state <= operacion_cancelada;
                 -- Si se selecciona producto, calculamos el precio
                 elsif selec_producto /= "00" then
+                    case selec_producto is
+                        when "10" => vprecio := 100;
+                        when "01" => vprecio := 150;
+                        when others => vprecio := 9999;
+                    end case;
+                    precio <= vprecio;
+                    producto_seleccionado <= selec_producto;
                     -- Si el dinero introducido es suficiente, el siguiente paso es entregar el producto
-                    if (importe >= precio) then next_state <= entregando_producto;
+                    if (importe >= vprecio) then next_state <= entregando_producto;
                     end if;
                 else next_state <= recibiendo_monedas;
                 end if;
@@ -86,52 +95,34 @@ begin
             when reposo =>
                 activar_contador <= '0'; devolver_dinero <= '0';
                 i_cantidad_a_devolver <= 0; producto <= "00";
-                precio <= 0;
                 
             when recibiendo_monedas =>
                 activar_contador <= '1'; devolver_dinero <= '0';
                 i_cantidad_a_devolver <= 0; producto <= "00";
-                case selec_producto is
-                    when "00" => precio <= 0;
-                    when "10" => precio <= 100;
-                    when "01" => precio <= 150;
-                    when others => precio <= 9999;
-                    end case;
                 
             when devolviendo_el_dinero =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
-                precio <= 0;
                 
             when entregando_producto =>
                 activar_contador <= '0'; devolver_dinero <= '0'; 
-                i_cantidad_a_devolver <= 0;
+                i_cantidad_a_devolver <= importe - precio;
                 -- activar la señal del producto...
-                case selec_producto is
+                case producto_seleccionado is
                     when "10" => producto <= "10";
                     when "01" => producto <= "01";
                     when others => producto <="00";
                 end case;                
                 
             when operacion_cancelada =>
-                activar_contador <= '0';
+                activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
-                precio <= 0;
                 -- al cancelar la operación, el siguiente paso es devolver todo el dinero que se ha introducido.
                 i_cantidad_a_devolver <= importe;
-                if i_cantidad_a_devolver > 0 then devolver_dinero <= '1';
-                else devolver_dinero <= '0';
-                end if;
                 
             when producto_entregado =>
-                activar_contador <= '0';
+                activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
-                -- cuando se ha entregado el producto, el siguiente paso es devolver el dinero sobrante
-                i_cantidad_a_devolver <= importe - precio;
-                precio <= 0;
-                if i_cantidad_a_devolver > 0 then devolver_dinero <= '1';
-                else devolver_dinero <= '0';
-                end if;
             
         end case;
         
