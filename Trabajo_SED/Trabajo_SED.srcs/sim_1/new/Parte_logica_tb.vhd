@@ -43,11 +43,21 @@ begin
     stimuli : process
     begin
         wait for 125ns;
-        -- Comprobamos si se activa el contador
-        sw <= "1000";    
+        -- Vamos a introducir algunas monedas y adquirir un producto
+        -- Introducimos las monedas (importe total: 130)
+        sw <= "1000"; wait for 50ns;
+        sw <= "0010"; wait for 50ns;
+        sw <= "0001"; wait for 50ns;
+        sw <= "0000"; wait for 250ns;
+        
+        -- seleccionamos el producto que cuesta un euro (precio: 100)
+        -- Debería desactivarse el contador
+        selec_prod <= "10";
         wait for 50ns;
-        sw <= "0000"; -- al hacer esto no debería cambiar de estado.
-        wait for 50ns;
+        selec_prod <= "00";
+        
+        -- Debería entregar el producto y después devolver el dinero
+        
         wait for 1000ns;
     end process;    
 
