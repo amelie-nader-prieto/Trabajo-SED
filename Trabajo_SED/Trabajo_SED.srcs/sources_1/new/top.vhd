@@ -22,7 +22,7 @@ architecture Behavioral of top is
     SIGNAL puls : std_logic_vector(1DOWNTO 0);         
     SIGNAL act_cont : std_logic;         
     SIGNAL imp_tot:integer;         
-
+    signal reset_contador : std_logic;
 
 
 
@@ -79,7 +79,7 @@ END COMPONENT;
 
 
 begin
-
+    reset_contador <= not reset; -- el contador se resetea a nivel bajo  
   Inst_boton_reset: boton_reset
         PORT MAP (
           CLK=>clk,
@@ -116,7 +116,7 @@ begin
    Inst_CONTADOR_DE_MONEDAS: CONTADOR_DE_MONEDAS 
    PORT MAP (
          clk=>clk,
-         clr_n=>reset,
+         clr_n=>reset_contador,
          enable=>act_cont,
          sw_in=>int_sync,
          total=>imp_tot
