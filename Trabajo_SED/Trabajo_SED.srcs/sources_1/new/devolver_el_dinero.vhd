@@ -23,7 +23,8 @@ architecture Behavioral of devolver_el_dinero is
     -- (los estados en los que se encienden leds deben durar un tiempo, por ejemplo 1 segundo)
     signal tiempo_terminado : std_logic := '0';
     signal count : integer := 0;
-    constant count_max : integer := 100_000_000;
+    constant count_max : integer := 10; -- VALOR PARA SIMULAR
+    -- constant count_max : integer := 100_000_000; -- VALOR REAL
 
 begin
 
@@ -78,21 +79,7 @@ begin
                 end if;
         
         end case;
-        
-     
---        if current_state = reposo then
---            if dinero_restante >= 100 then next_state <= devolver100;
---            elsif dinero_restante >= 50 then next_state <= devolver50;
---            elsif dinero_restante >= 20 then next_state <= devolver20;
---            elsif dinero_restante >= 10 then next_state <= devolver10;
---            else next_state <= reposo;
---            end if;
---        elsif current_state = entrada_cambiada then next_state <= reposo;
---        else
---            if tiempo_terminado = '1' then next_state <= reposo;
---            else next_state <= current_state;
---            end if;
---        end if;
+             
     end process;
     
     output_decod : process(current_state)
@@ -109,7 +96,7 @@ begin
         end case;
     
     end process;
-    
-    cantidad_restante <= dinero_restante;
+        
+    cantidad_restante <= dinero_restante ;
 
 end Behavioral;

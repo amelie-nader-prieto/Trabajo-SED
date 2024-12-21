@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="275.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="895.501 ns"></ZoomEndTime>
-      <Cursor1Time time="575.000 ns"></Cursor1Time>
+      <ZoomStartTime time="3,704.300 ns"></ZoomStartTime>
+      <ZoomEndTime time="6,210.301 ns"></ZoomEndTime>
+      <Cursor1Time time="3,325.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="134"></NameColumnWidth>
+      <NameColumnWidth column_width="122"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/Parte_logica_tb/sw" type="array">
       <obj_property name="ElementShortName">sw[3:0]</obj_property>
       <obj_property name="ObjectShortName">sw[3:0]</obj_property>
@@ -58,5 +58,45 @@
    <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/precio" type="other">
       <obj_property name="ElementShortName">precio</obj_property>
       <obj_property name="ObjectShortName">precio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/count" type="other">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/tiempo_terminado" type="logic">
+      <obj_property name="ElementShortName">tiempo_terminado</obj_property>
+      <obj_property name="ObjectShortName">tiempo_terminado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/cantidad" type="other">
+      <obj_property name="ElementShortName">cantidad</obj_property>
+      <obj_property name="ObjectShortName">cantidad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/cantidad_restante" type="other">
+      <obj_property name="ElementShortName">cantidad_restante</obj_property>
+      <obj_property name="ObjectShortName">cantidad_restante</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/count" type="other">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/tiempo_terminado" type="logic">
+      <obj_property name="ElementShortName">tiempo_terminado</obj_property>
+      <obj_property name="ObjectShortName">tiempo_terminado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/enable_slave" type="logic">
+      <obj_property name="ElementShortName">enable_slave</obj_property>
+      <obj_property name="ObjectShortName">enable_slave</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/dinero_restante" type="other">
+      <obj_property name="ElementShortName">dinero_restante</obj_property>
+      <obj_property name="ObjectShortName">dinero_restante</obj_property>
    </wvobject>
 </wave_config>

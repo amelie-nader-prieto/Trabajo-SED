@@ -30,7 +30,34 @@ signal precio : integer := 0; -- precio del producto (0 cuando no se ha seleccio
 signal producto_seleccionado : std_logic_vector(1 downto 0); -- info del producto seleccionado
 signal i_cantidad_a_devolver : integer := 0;
 
+-- temporización
+-- (los estados en los que se encienden leds deben durar un tiempo)
+signal tiempo_terminado : std_logic := '0';
+signal count : integer := 0;
+constant count_max : integer := 10; -- VALOR PARA SIMULAR
+-- constant count_max : integer := 500_000_000; -- VALOR REAL
+
 begin
+    
+    temporizacion : process(clk)
+    begin
+        if rising_edge(clk) then
+            if current_state = entregando_producto then
+            -- el estado de entregar el producto debe durar lo suficiente como para que se aprecie el encendido del LED
+                if count >= count_max then -- ya ha pasado el tiempo
+                    tiempo_terminado <= '1';
+                    count <= 0;
+                else -- aún no ha pasado el tiempo
+                    tiempo_terminado <= '0';
+                    count <= count + 1;
+                end if;
+            else
+            -- en los demás estados, reiniciar la cuenta
+                tiempo_terminado <= '0';
+                count <= 0;
+            end if;
+        end if;
+    end process;
     
     state_reg : process(clk)
     begin
@@ -39,7 +66,7 @@ begin
         end if;
     end process;
     
-    nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante)
+    nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante, tiempo_terminado)
         variable vprecio : integer;
     begin
         case current_state is
@@ -72,17 +99,15 @@ begin
                 end if;
                 
             when entregando_producto =>
-                next_state <= producto_entregado;
+                if tiempo_terminado = '1' then next_state <= producto_entregado;
+                else next_state <= entregando_producto;
+                end if;
             
             when operacion_cancelada =>
                 next_state <= devolviendo_el_dinero;
             
             when producto_entregado =>
                 next_state <= devolviendo_el_dinero;
---                if (i_cantidad_a_devolver > 0) then next_state <= devolviendo_el_dinero;
---                elsif (i_cantidad_a_devolver = 0) then next_state <= reposo;
---                else next_state <= producto_entregado;
---                end if;
             
         end case;
     end process;

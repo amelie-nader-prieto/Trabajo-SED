@@ -54,8 +54,8 @@ begin
         selec_prod <= "10"; wait for 50ns; selec_prod <= "00";
         
         -- Debería entregar el producto, devolver el dinero y volver al reposo.                
-        
-        wait for 1000ns;
+        wait for 100 * 25ns;
+        --wait for 1000ns;
         
         -- Prueba 2: introducimos algunas monedas y pulsamos reset
         -- Debería anular el importe y devolver el dinero

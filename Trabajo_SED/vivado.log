@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Dec 21 16:10:16 2024
-# Process ID: 7248
+# Start of session at: Sat Dec 21 16:24:07 2024
+# Process ID: 5260
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3136 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6040 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -19,7 +19,7 @@
 # Host memory       :8377 MB
 # Swap memory       :7554 MB
 # Total Virtual     :15931 MB
-# Available Virtual :6596 MB
+# Available Virtual :7986 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
@@ -114,31 +114,57 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:15 . Memory (MB): peak = 1503.789 ; gain = 441.410
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1510.645 ; gain = 441.668
 update_compile_order -fileset sources_1
+set_property top Parte_logica [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Parte_logica_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'devolver_el_dinero_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj devolver_el_dinero_tb_vhdl.prj"
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log"
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -149,28 +175,35 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
 Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
-Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero_tb
-Built simulation snapshot devolver_el_dinero_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "devolver_el_dinero_tb_behav -key {Behavioral:sim_1:Functional:devolver_el_dinero_tb} -tclbatch {devolver_el_dinero_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg} -log {simulate.log}"
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
-WARNING: Simulation object /Parte_logica_tb/sw was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/clk was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/reset was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/importe was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/selec_prod was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/producto was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/devolver_dinero was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/uut/FSM_Master/current_state was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/uut/FSM_Master/next_state was not found in the design.
-WARNING: Simulation object /Parte_logica_tb/uut/FSM_Master/precio was not found in the design.
-source devolver_el_dinero_tb.tcl
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
+WARNING: Simulation object /devolver_el_dinero_tb/cantidad was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/clk was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/enable was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/monedas was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/cantidad_restante was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/clk_period was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/duracion_estado was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/count was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/tiempo_terminado was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/current_state was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/next_state was not found in the design.
+source Parte_logica_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -181,134 +214,55 @@ source devolver_el_dinero_tb.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'devolver_el_dinero_tb_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1554.422 ; gain = 18.449
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1586.242 ; gain = 44.316
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Master/count}} 
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
 relaunch_sim
 Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'devolver_el_dinero_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj devolver_el_dinero_tb_vhdl.prj"
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log"
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1558.668 ; gain = 4.246
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/devolver_el_dinero_tb/uut/count}} 
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/devolver_el_dinero_tb/uut/tiempo_terminado}} 
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/devolver_el_dinero_tb/uut/current_state}} 
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/devolver_el_dinero_tb/uut/next_state}} 
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj devolver_el_dinero_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Time resolution is 1 ps
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj devolver_el_dinero_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'devolver_el_dinero_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot devolver_el_dinero_tb_behav xil_defaultlib.devolver_el_dinero_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -319,12 +273,114 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
 Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
-Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero_tb
-Built simulation snapshot devolver_el_dinero_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2627.602 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2626.168 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2662.508 ; gain = 0.000
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Master/count}} 
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Master/tiempo_terminado}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2662.508 ; gain = 0.000
 run 500 ns
 run 500 ns
 run 500 ns
@@ -375,12 +431,1185 @@ run 500 ns
 run 500 ns
 run 500 ns
 run 500 ns
-save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
-set_property xsim.view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/FSM_tb_behav.wcfg C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg} [get_filesets sim_1]
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2662.508 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/cantidad}} 
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/cantidad_restante}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/current_state}} 
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/next_state}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-set_property top top [current_fileset]
-update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
+WARNING: Simulation object /devolver_el_dinero_tb/cantidad was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/clk was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/enable was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/monedas was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/cantidad_restante was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/clk_period was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/duracion_estado was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/count was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/tiempo_terminado was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/current_state was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/next_state was not found in the design.
+source Parte_logica_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2662.508 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/count}} 
+current_wave_config {devolver_el_dinero_tb_behav.wcfg}
+devolver_el_dinero_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/tiempo_terminado}} 
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/tiempo_terminado}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2662.508 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/enable_slave}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2662.508 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+relaunch_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-39] 'suspend_sim' failed due to earlier errors.
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'suspend_sim' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/dinero_restante}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2662.508 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+Parte_logica_tb_behav.wcfg
+add_wave {{/Parte_logica_tb/uut/FSM_Master/cantidad_restante}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2663.012 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2664.039 ; gain = 0.000
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\devolver_el_dinero.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sim_1\new\Parte_logica_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\FSM_principal.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Parte_logica_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Parte_logica_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Parte_logica_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Parte_logica_tb_behav xil_defaultlib.Parte_logica_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FSM_principal [fsm_principal_default]
+Compiling architecture behavioral of entity xil_defaultlib.devolver_el_dinero [devolver_el_dinero_default]
+Compiling architecture behavioral of entity xil_defaultlib.decodificador_moneda [decodificador_moneda_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumadordemonedas [sumadordemonedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTADOR_DE_MONEDAS [contador_de_monedas_default]
+Compiling architecture behavioral of entity xil_defaultlib.Parte_logica [parte_logica_default]
+Compiling architecture behavioral of entity xil_defaultlib.parte_logica_tb
+Built simulation snapshot Parte_logica_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Parte_logica_tb_behav -key {Behavioral:sim_1:Functional:Parte_logica_tb} -tclbatch {Parte_logica_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
+WARNING: Simulation object /devolver_el_dinero_tb/cantidad was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/clk was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/enable was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/monedas was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/cantidad_restante was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/clk_period was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/duracion_estado was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/count was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/tiempo_terminado was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/current_state was not found in the design.
+WARNING: Simulation object /devolver_el_dinero_tb/uut/next_state was not found in the design.
+source Parte_logica_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Parte_logica_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2676.859 ; gain = 12.512
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 16:21:07 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 17:28:29 2024...
