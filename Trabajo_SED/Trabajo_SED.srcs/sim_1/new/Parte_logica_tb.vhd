@@ -43,22 +43,49 @@ begin
     stimuli : process
     begin
         wait for 125ns;
-        -- Vamos a introducir algunas monedas y adquirir un producto
-        -- Introducimos las monedas (importe total: 130)
+        
+        -- Prueba 1: introducimos algunas monedas (importe total: 130) y adquirimos un producto   
+        sw <= "1000"; wait for 50ns; -- debería activarse el contador
+        sw <= "0010"; wait for 50ns;
+        sw <= "0001"; wait for 50ns;
+        sw <= "0000"; wait for 250ns;
+        -- seleccionamos el producto que cuesta un euro (precio: 100)
+        -- Debería desactivarse el contador
+        selec_prod <= "10"; wait for 50ns; selec_prod <= "00";
+        
+        -- Debería entregar el producto, devolver el dinero y volver al reposo.                
+        
+        wait for 1000ns;
+        
+        -- Prueba 2: introducimos algunas monedas y pulsamos reset
+        -- Debería anular el importe y devolver el dinero
         sw <= "1000"; wait for 50ns;
+        sw <= "0001"; wait for 50ns;
+        sw <= "0000"; wait for 50ns;
+        reset <= '1'; wait for 250ns;
+        reset <= '0';
+        
+        wait for 1000ns;
+                
+        -- Prueba 3: introducimos algunas monedas (no suficientes) y adquirimos un producto
+        -- Al hacer eso no debería modificarse el estado
+        sw <= "0100"; wait for 50ns; -- debería activarse el contador
         sw <= "0010"; wait for 50ns;
         sw <= "0001"; wait for 50ns;
         sw <= "0000"; wait for 250ns;
         
-        -- seleccionamos el producto que cuesta un euro (precio: 100)
-        -- Debería desactivarse el contador
-        selec_prod <= "10";
-        wait for 50ns;
-        selec_prod <= "00";
-        
-        -- Debería entregar el producto y después devolver el dinero
+        selec_prod <= "01"; wait for 50ns; selec_prod <= "00";
         
         wait for 1000ns;
+        
+        -- Prueba 4: terminamos de introducir el importe
+        -- No debería entregar el producto si no lo volvemos a seleccionar
+        sw <= "0100"; wait for 50ns; -- debería activarse el contador
+        sw <= "0010"; wait for 50ns;
+        sw <= "0000"; --wait for 250ns;
+        
+        wait for 1000ns;
+        
     end process;    
 
 end Behavioral;

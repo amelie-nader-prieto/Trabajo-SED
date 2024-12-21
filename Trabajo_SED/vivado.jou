@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec 20 14:58:55 2024
-# Process ID: 16912
+# Start of session at: Sat Dec 21 11:50:17 2024
+# Process ID: 20400
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3996 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11524 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,13 +17,76 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7491 MB
-# Total Virtual     :15868 MB
-# Available Virtual :4516 MB
+# Swap memory       :7554 MB
+# Total Virtual     :15931 MB
+# Available Virtual :7371 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 update_compile_order -fileset sources_1
-synth_design -top top -part xc7a100tcsg324-1 -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Parte_logica [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+source Parte_logica_tb.tcl
+run 500 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+source Parte_logica_tb.tcl
+run 500 ns
+relaunch_sim
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+add_wave {{/Parte_logica_tb/uut/Contador/clr_n}} 
+relaunch_sim
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+add_wave {{/Parte_logica_tb/uut/Contador/total}} 
+relaunch_sim
+run 500 ns
+run 500 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+source Parte_logica_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+source Parte_logica_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+relaunch_sim
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+source Parte_logica_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
