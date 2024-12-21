@@ -18,8 +18,34 @@ architecture Behavioral of devolver_el_dinero is
     signal next_state : states;
     signal dinero_restante : integer := 0;
     signal cantidad_prev : integer := 0;
+    
+    -- temporización
+    -- (los estados en los que se encienden leds deben durar un tiempo, por ejemplo 1 segundo)
+    signal tiempo_terminado : std_logic := '0';
+    signal count : integer := 0;
+    constant count_max : integer := 100_000_000;
 
 begin
+
+    temporizacion : process(clk)
+    begin
+        if rising_edge(clk) then
+            if current_state = devolver100 or current_state = devolver50 or current_state = devolver20 or current_state = devolver10 then
+            -- en los estados en los que se activan leds debe llevarse la cuenta
+                if count >= count_max then -- ya ha pasado el tiempo
+                    tiempo_terminado <= '1';
+                    count <= 0;
+                else -- aún no ha pasado el tiempo
+                    tiempo_terminado <= '0';
+                    count <= count+1;
+                end if;
+            else
+            -- en los demás estados, reiniciar la cuenta
+                count <= 0;
+                tiempo_terminado <= '0';
+            end if;
+        end if;
+    end process;
 
     state_reg : process(clk)
     --variable cantidad_prev : integer := cantidad;
@@ -33,18 +59,40 @@ begin
     end if;
     end process;
     
-    nextstate_decod : process(current_state) --, cantidad)
+    nextstate_decod : process(current_state, tiempo_terminado) --, cantidad)
     begin
-        --if cantidad'event then next_state <= entrada_cambiada;       
-        if current_state = reposo then
-            if dinero_restante >= 100 then next_state <= devolver100;
-            elsif dinero_restante >= 50 then next_state <= devolver50;
-            elsif dinero_restante >= 20 then next_state <= devolver20;
-            elsif dinero_restante >= 10 then next_state <= devolver10;
-            else next_state <= reposo;
-            end if;
-        else next_state <= reposo;
-        end if;
+    
+        case current_state is
+            when reposo =>
+                if dinero_restante >= 100 then next_state <= devolver100;
+                elsif dinero_restante >= 50 then next_state <= devolver50;
+                elsif dinero_restante >= 20 then next_state <= devolver20;
+                elsif dinero_restante >= 10 then next_state <= devolver10;
+                else next_state <= reposo;
+                end if;
+            when entrada_cambiada =>
+                next_state <= reposo;
+            when others =>     
+                if tiempo_terminado = '1' then next_state <= reposo;
+                else next_state <= current_state;
+                end if;
+        
+        end case;
+        
+     
+--        if current_state = reposo then
+--            if dinero_restante >= 100 then next_state <= devolver100;
+--            elsif dinero_restante >= 50 then next_state <= devolver50;
+--            elsif dinero_restante >= 20 then next_state <= devolver20;
+--            elsif dinero_restante >= 10 then next_state <= devolver10;
+--            else next_state <= reposo;
+--            end if;
+--        elsif current_state = entrada_cambiada then next_state <= reposo;
+--        else
+--            if tiempo_terminado = '1' then next_state <= reposo;
+--            else next_state <= current_state;
+--            end if;
+--        end if;
     end process;
     
     output_decod : process(current_state)
