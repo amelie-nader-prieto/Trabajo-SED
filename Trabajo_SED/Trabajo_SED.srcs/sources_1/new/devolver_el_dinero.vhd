@@ -49,13 +49,16 @@ begin
     end process;
 
     state_reg : process(clk)
-    --variable cantidad_prev : integer := cantidad;
     begin
     if enable = '1' then
         if rising_edge(clk) then --current_state <= next_state;
             if cantidad_prev /= cantidad then current_state <= entrada_cambiada; cantidad_prev <= cantidad;
             else current_state <= next_state;
             end if;
+        end if;
+    -- si el enable se desactivó mientras estábamos en uno de los estados temporizados, volver al reposo cuando termine
+    elsif enable = '0' and tiempo_terminado = '1' then
+        if rising_edge(clk) then current_state <= next_state;
         end if;
     end if;
     end process;

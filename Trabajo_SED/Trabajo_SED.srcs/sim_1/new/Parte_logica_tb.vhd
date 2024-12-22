@@ -65,7 +65,7 @@ begin
         reset <= '1'; wait for 250ns;
         reset <= '0';
         
-        wait for 1000ns;
+        wait for 5000ns;
                 
         -- Prueba 3: introducimos algunas monedas (no suficientes) y adquirimos un producto
         -- Al hacer eso no debería modificarse el estado

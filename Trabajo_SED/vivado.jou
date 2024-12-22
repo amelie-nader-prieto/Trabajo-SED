@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Dec 21 16:24:07 2024
-# Process ID: 5260
+# Start of session at: Sun Dec 22 11:15:04 2024
+# Process ID: 20220
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6040 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17724 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,26 +17,13 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7554 MB
-# Total Virtual     :15931 MB
-# Available Virtual :7986 MB
+# Swap memory       :7549 MB
+# Total Virtual     :15927 MB
+# Available Virtual :7736 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Parte_logica [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Parte_logica_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
 launch_simulation
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
@@ -47,378 +34,6 @@ run 500 ns
 run 500 ns
 run 500 ns
 run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Master/count}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Master/count}} 
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Master/tiempo_terminado}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/cantidad}} 
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/cantidad_restante}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/current_state}} 
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/next_state}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
-source Parte_logica_tb.tcl
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/count}} 
-current_wave_config {devolver_el_dinero_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/tiempo_terminado}} 
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/tiempo_terminado}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/enable_slave}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/dinero_restante}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Master/cantidad_restante}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg}
 run 500 ns
 run 500 ns
 run 500 ns
@@ -430,6 +45,56 @@ launch_simulation
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
 source Parte_logica_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+current_wave_config {Parte_logica_tb_behav.wcfg}
+add_wave {{/Parte_logica_tb/uut/FSM_Slave/clk}} 
+relaunch_sim
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+relaunch_sim
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
 run 500 ns
 run 500 ns
 run 500 ns
