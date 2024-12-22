@@ -23,7 +23,7 @@ architecture Behavioral of top is
     SIGNAL act_cont : std_logic;         
     SIGNAL imp_tot:integer;         
     signal reset_contador : std_logic;
-
+    signal int_sync_contador : std_logic_vector(3 downto 0);
 
 
 COMPONENT boton_reset
@@ -58,6 +58,7 @@ component FSM is
            selec_producto : in STD_LOGIC_VECTOR (1 downto 0);
            importe : in integer;
            activar_contador : out STD_LOGIC;
+           reset_contador : out std_logic;
            entregar_producto : out STD_LOGIC_VECTOR (1 downto 0);
            devolver_monedas : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
@@ -79,7 +80,7 @@ END COMPONENT;
 
 
 begin
-    reset_contador <= not reset; -- el contador se resetea a nivel bajo  
+
   Inst_boton_reset: boton_reset
         PORT MAP (
           CLK=>clk,
@@ -110,6 +111,7 @@ begin
            importe =>imp_tot,
            CLK =>clk,           
            activar_contador =>act_cont,
+           reset_contador => reset_contador,
            entregar_producto=>entrega_producto,
            devolver_monedas => devolver_monedas
            );
@@ -118,7 +120,7 @@ begin
          clk=>clk,
          clr_n=>reset_contador,
          enable=>act_cont,
-         sw_in=>int_sync,
+         sw_in=>int_sync_contador,
          total=>imp_tot
         );
      Inst_pulsadores: pulsadores
@@ -129,4 +131,11 @@ begin
         salida_pulsador=>puls
                                                                 
         );
+
+    reg_entrada_contador : process(clk)
+    begin
+        if rising_edge(clk) then int_sync_contador <= int_sync;
+        end if;
+    end process;
+    
 end Behavioral;

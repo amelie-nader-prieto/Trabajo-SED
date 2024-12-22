@@ -9,6 +9,7 @@ entity FSM is
            selec_producto : in STD_LOGIC_VECTOR (1 downto 0);
            importe : in integer;
            activar_contador : out STD_LOGIC;
+           reset_contador : out std_logic;
            entregar_producto : out STD_LOGIC_VECTOR (1 downto 0);
            devolver_monedas : out STD_LOGIC_VECTOR (3 downto 0));
 end FSM;
@@ -29,6 +30,7 @@ architecture Behavioral of FSM is
             activar_contador : out STD_LOGIC;
             devolver_dinero : out STD_LOGIC;
             cantidad_a_devolver : out integer;
+            reset_contador : out std_logic;
             producto : out STD_LOGIC_VECTOR (1 downto 0)
             );
     end component;
@@ -54,6 +56,7 @@ begin
         devolver_dinero => activar_slave,
         cantidad_restante => i_cantidad_restante,
         cantidad_a_devolver => i_cantidad_a_devolver,
+        reset_contador => reset_contador,
         producto => entregar_producto
     );
     FSM_Slave : devolver_el_dinero port map(

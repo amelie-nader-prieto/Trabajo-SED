@@ -12,6 +12,7 @@ entity FSM_principal is
            activar_contador : out STD_LOGIC; -- para activar o desactivar el contador
            devolver_dinero : out STD_LOGIC; -- para activar o desactivar la FSM de devolver el dinero
            cantidad_a_devolver : out integer; -- va a la entrada de la FSM de devolver el dinero
+           reset_contador : out std_logic; -- para poner a cero el contador
            producto : out STD_LOGIC_VECTOR (1 downto 0)); -- LEDs de la placa
 end FSM_principal;
 
@@ -29,6 +30,7 @@ signal next_state : states;
 signal precio : integer := 0; -- precio del producto (0 cuando no se ha seleccionado ningún producto)
 signal producto_seleccionado : std_logic_vector(1 downto 0); -- info del producto seleccionado
 signal i_cantidad_a_devolver : integer := 0;
+signal i_reset_contador : std_logic := '1';
 
 -- temporización
 -- (los estados en los que se encienden leds deben durar un tiempo)
@@ -120,14 +122,17 @@ begin
                 -- debería resetearse el contador 
                 activar_contador <= '0'; devolver_dinero <= '0';
                 i_cantidad_a_devolver <= 0; producto <= "00";
+                i_reset_contador <= not reset;
                 
             when recibiendo_monedas =>
                 activar_contador <= '1'; devolver_dinero <= '0';
                 i_cantidad_a_devolver <= 0; producto <= "00";
+                i_reset_contador <= not reset;
                 
             when devolviendo_el_dinero =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
+                i_reset_contador <= not reset;
                 
             when entregando_producto =>
                 activar_contador <= '0'; devolver_dinero <= '0';
@@ -136,23 +141,38 @@ begin
                     when "10" => producto <= "10";
                     when "01" => producto <= "01";
                     when others => producto <="00";
-                end case;                
+                end case;
+                i_reset_contador <= not reset;
                 
             when operacion_cancelada =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
                 -- al cancelar la operación, el siguiente paso es devolver todo el dinero que se ha introducido.
                 i_cantidad_a_devolver <= importe;
+                if importe /= 0 then
+                    activar_contador <= '1';
+                    i_reset_contador <= '0';
+                end if;
                 
             when producto_entregado =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
                 i_cantidad_a_devolver <= importe - precio;
+                if importe /= 0 then
+                    activar_contador <= '1';
+                    i_reset_contador <= '0';
+                end if;
             
         end case;
         
     end process;
     
     cantidad_a_devolver <= i_cantidad_a_devolver;
+    
+    reg_reset_contador : process(clk)
+    begin
+        if rising_edge(clk) then reset_contador <= i_reset_contador;
+        end if;
+    end process;
     
 end Behavioral;

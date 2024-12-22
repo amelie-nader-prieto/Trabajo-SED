@@ -26,6 +26,7 @@ architecture Behavioral of Parte_logica is
             activar_contador : out STD_LOGIC;
             devolver_dinero : out STD_LOGIC;
             cantidad_a_devolver : out integer;
+            reset_contador : out std_logic;
             producto : out STD_LOGIC_VECTOR (1 downto 0)
             );
     end component;
@@ -67,6 +68,7 @@ FSM_Master : FSM_principal port map(
     activar_contador => enable_contador,
     devolver_dinero => enable_slave,
     cantidad_a_devolver => i_cantidad_a_devolver,
+    reset_contador => reset_contador,
     producto => producto
 );
 
@@ -89,12 +91,6 @@ Contador : CONTADOR_DE_MONEDAS port map(
 reg_entrada_contador : process(clk)
 begin
     if rising_edge(clk) then sw_contador <= sw;
-    end if;
-end process;
-
-reg_reset_contador : process(clk)
-begin
-    if rising_edge(clk) then reset_contador <= not reset;
     end if;
 end process;
 

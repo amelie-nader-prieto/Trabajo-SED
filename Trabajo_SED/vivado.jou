@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Dec 22 11:15:04 2024
-# Process ID: 20220
+# Start of session at: Sun Dec 22 16:41:44 2024
+# Process ID: 15408
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17724 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4528 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :AMELIE
@@ -17,93 +17,10 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8377 MB
-# Swap memory       :7549 MB
-# Total Virtual     :15927 MB
-# Available Virtual :7736 MB
+# Swap memory       :7784 MB
+# Total Virtual     :16161 MB
+# Available Virtual :9219 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
-source Parte_logica_tb.tcl
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-close_sim
-launch_simulation
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
-source Parte_logica_tb.tcl
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-current_wave_config {Parte_logica_tb_behav.wcfg}
-add_wave {{/Parte_logica_tb/uut/FSM_Slave/clk}} 
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-relaunch_sim
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-run 500 ns
-close_sim

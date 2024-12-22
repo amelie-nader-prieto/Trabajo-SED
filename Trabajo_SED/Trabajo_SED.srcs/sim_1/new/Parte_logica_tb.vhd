@@ -86,6 +86,26 @@ begin
         
         wait for 1000ns;
         
+        -- Prueba 5: seleccionamos producto (distinto al de antes)
+        -- El precio debería actualizarse.
+        selec_prod <= "10"; wait for 50ns; selec_prod <= "00";
+        
+        -- Debería entregar el producto, devolver el dinero y volver al reposo.
+        wait for 100 * 25ns;
+        
+        -- Al volver al reposo, el importe y el precio deberían ser 0
+        wait for 5000ns;
+        
+        -- Prueba 6: introducimos el importe justo para adquirir uno de los productos.
+        -- Debería entregarnos el producto y volver al reposo
+        sw <= "0100"; wait for 150ns;
+        sw <= "0000";
+        
+        wait for 250ns;
+        selec_prod <= "01"; wait for 50ns; selec_prod <= "00";
+        
+        wait for 1000ns;
+        
     end process;    
 
 end Behavioral;

@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3,704.300 ns"></ZoomStartTime>
-      <ZoomEndTime time="6,210.301 ns"></ZoomEndTime>
-      <Cursor1Time time="3,325.000 ns"></Cursor1Time>
+      <ZoomStartTime time="10,499.425 ns"></ZoomStartTime>
+      <ZoomEndTime time="11,499.426 ns"></ZoomEndTime>
+      <Cursor1Time time="11,150.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="122"></NameColumnWidth>
+      <NameColumnWidth column_width="110"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/Parte_logica_tb/sw" type="array">
       <obj_property name="ElementShortName">sw[3:0]</obj_property>
       <obj_property name="ObjectShortName">sw[3:0]</obj_property>
@@ -30,6 +30,10 @@
    <wvobject fp_name="/Parte_logica_tb/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/i_reset_contador" type="logic">
+      <obj_property name="ElementShortName">i_reset_contador</obj_property>
+      <obj_property name="ObjectShortName">i_reset_contador</obj_property>
    </wvobject>
    <wvobject fp_name="/Parte_logica_tb/importe" type="other">
       <obj_property name="ElementShortName">importe</obj_property>
@@ -66,6 +70,14 @@
    <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/tiempo_terminado" type="logic">
       <obj_property name="ElementShortName">tiempo_terminado</obj_property>
       <obj_property name="ObjectShortName">tiempo_terminado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/FSM_Master/activar_contador" type="logic">
+      <obj_property name="ElementShortName">activar_contador</obj_property>
+      <obj_property name="ObjectShortName">activar_contador</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parte_logica_tb/uut/Contador/clr_n" type="logic">
+      <obj_property name="ElementShortName">clr_n</obj_property>
+      <obj_property name="ObjectShortName">clr_n</obj_property>
    </wvobject>
    <wvobject fp_name="/Parte_logica_tb/uut/FSM_Slave/cantidad" type="other">
       <obj_property name="ElementShortName">cantidad</obj_property>
