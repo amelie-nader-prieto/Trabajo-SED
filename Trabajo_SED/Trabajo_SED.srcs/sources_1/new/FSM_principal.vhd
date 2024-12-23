@@ -69,10 +69,10 @@ begin
     end process;
     
     nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante, tiempo_terminado)
-        variable vprecio : integer;
+        variable vprecio : integer := precio;
     begin
-    
         next_state <= current_state;
+        producto_seleccionado <= "00";
         vprecio := precio;
         
         case current_state is
