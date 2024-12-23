@@ -1,14 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CONTADOR_DE_MONEDAS'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'FSM_principal'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/Parte_logica.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Parte_logica'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'sumadordemonedas'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'decodificador_moneda'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'devolver_el_dinero'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sim_1/new/Parte_logica_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Parte_logica_tb'

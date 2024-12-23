@@ -3,8 +3,8 @@
   <File Type="PA-TCL" Name="pulsadores.tcl"/>
   <File Type="REPORTS-TCL" Name="pulsadores_reports.tcl"/>
   <File Type="RDS-RDS" Name="pulsadores.vds"/>
-  <File Type="RDS-UTIL" Name="Parte_logica_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Parte_logica_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="pulsadores.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>

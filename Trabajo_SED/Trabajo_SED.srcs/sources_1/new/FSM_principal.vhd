@@ -71,6 +71,8 @@ begin
     nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante, tiempo_terminado)
         variable vprecio : integer;
     begin
+    
+        next_state <= current_state;
         case current_state is
             when reposo =>
                 precio <= 0;
@@ -111,6 +113,9 @@ begin
             when producto_entregado =>
                 next_state <= devolviendo_el_dinero;
             
+            when others =>
+                next_state <= reposo;
+            
         end case;
     end process;
     
@@ -132,6 +137,7 @@ begin
             when devolviendo_el_dinero =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
+                i_cantidad_a_devolver <= i_cantidad_a_devolver;
                 i_reset_contador <= not reset;
                 
             when entregando_producto =>
@@ -142,6 +148,7 @@ begin
                     when "01" => producto <= "01";
                     when others => producto <="00";
                 end case;
+                i_cantidad_a_devolver <= i_cantidad_a_devolver;
                 i_reset_contador <= not reset;
                 
             when operacion_cancelada =>
