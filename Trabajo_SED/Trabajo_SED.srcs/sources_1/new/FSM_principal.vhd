@@ -73,14 +73,18 @@ begin
     begin
     
         next_state <= current_state;
+        vprecio := precio;
+        
         case current_state is
             when reposo =>
-                precio <= 0;
+                --precio <= 0;
+                vprecio := 0;
                 if SW = "1000" or sw = "0100" or sw = "0010" or sw = "0001" then next_state <= recibiendo_monedas;
                 else next_state <= reposo;
                 end if;
                 
             when recibiendo_monedas =>
+                vprecio := vprecio;
                 if reset = '1' then next_state <= operacion_cancelada;
                 -- Si se selecciona producto, calculamos el precio
                 elsif selec_producto /= "00" then
@@ -89,7 +93,7 @@ begin
                         when "01" => vprecio := 150;
                         when others => vprecio := 9999;
                     end case;
-                    precio <= vprecio;
+                    --precio <= vprecio;
                     producto_seleccionado <= selec_producto;
                     -- Si el dinero introducido es suficiente, el siguiente paso es entregar el producto
                     if (importe >= vprecio) then next_state <= entregando_producto;
@@ -98,25 +102,33 @@ begin
                 end if;
                                 
             when devolviendo_el_dinero =>
+                vprecio := vprecio;
                 if cantidad_restante = 0 then next_state <= reposo;
                 else next_state <= devolviendo_el_dinero;
                 end if;
                 
             when entregando_producto =>
+                vprecio := vprecio;
                 if tiempo_terminado = '1' then next_state <= producto_entregado;
                 else next_state <= entregando_producto;
                 end if;
             
             when operacion_cancelada =>
+                vprecio := vprecio;
                 next_state <= devolviendo_el_dinero;
             
             when producto_entregado =>
+                vprecio := vprecio;
                 next_state <= devolviendo_el_dinero;
             
             when others =>
+                vprecio := vprecio;
                 next_state <= reposo;
             
         end case;
+        
+        precio <= vprecio;
+        
     end process;
     
     output_decod : process(current_state)
@@ -156,6 +168,7 @@ begin
                 producto <= "00";
                 -- al cancelar la operación, el siguiente paso es devolver todo el dinero que se ha introducido.
                 i_cantidad_a_devolver <= importe;
+                i_reset_contador <= not reset;
                 if importe /= 0 then
                     activar_contador <= '1';
                     i_reset_contador <= '0';
@@ -165,6 +178,7 @@ begin
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
                 i_cantidad_a_devolver <= importe - precio;
+                i_reset_contador <= not reset;
                 if importe /= 0 then
                     activar_contador <= '1';
                     i_reset_contador <= '0';
