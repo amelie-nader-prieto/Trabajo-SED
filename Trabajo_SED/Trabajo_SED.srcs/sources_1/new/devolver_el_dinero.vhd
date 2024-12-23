@@ -86,20 +86,25 @@ begin
     end process;
     
     output_decod : process(current_state)
+        variable next_moneda : integer := 0;
     begin
-    
+        next_moneda := 0;
         case current_state is
             when reposo => devolver_monedas <= "0000";
-            when entrada_cambiada => devolver_monedas <= "0000"; dinero_restante <= cantidad;
-            when devolver100 => devolver_monedas <= "1000"; dinero_restante <= dinero_restante - 100;
-            when devolver50 => devolver_monedas <= "0100"; dinero_restante <= dinero_restante - 50;
-            when devolver20 => devolver_monedas <= "0010"; dinero_restante <= dinero_restante - 20;
-            when devolver10 => devolver_monedas <= "0001"; dinero_restante <= dinero_restante - 10;
+            when entrada_cambiada => devolver_monedas <= "0000";
+            when devolver100 => devolver_monedas <= "1000"; next_moneda := 100;
+            when devolver50 => devolver_monedas <= "0100"; next_moneda := 50;
+            when devolver20 => devolver_monedas <= "0010"; next_moneda := 20;
+            when devolver10 => devolver_monedas <= "0001"; next_moneda := 10;
             when others => devolver_monedas <= "0000";
         end case;
-    
+        if current_state = entrada_cambiada then
+            dinero_restante <= cantidad;
+        else
+            dinero_restante <= dinero_restante - next_moneda;
+        end if; 
     end process;
-        
-    cantidad_restante <= dinero_restante ;
+    
+    cantidad_restante <= dinero_restante;
 
 end Behavioral;

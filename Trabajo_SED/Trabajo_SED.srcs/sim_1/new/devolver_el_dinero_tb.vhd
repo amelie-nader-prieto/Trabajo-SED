@@ -50,7 +50,7 @@ begin
     
     -- si desactivamos el enable, deberían dejar de actualizarse los estados
     enable <= '0'; -- las salidas deberían quedarse congeladas
-    wait for 100ns;
+    wait for 500ns;
     
 end process;
 
