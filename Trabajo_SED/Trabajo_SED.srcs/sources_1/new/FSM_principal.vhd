@@ -69,66 +69,86 @@ begin
     end process;
     
     nextstate_decod : process(current_state, sw, reset, selec_producto, precio, importe, cantidad_restante, tiempo_terminado)
-        variable vprecio : integer := precio;
+        --variable vprecio : integer := precio;
     begin
         next_state <= current_state;
         producto_seleccionado <= "00";
-        vprecio := precio;
+        --vprecio := precio;
         
         case current_state is
             when reposo =>
                 --precio <= 0;
-                vprecio := 0;
+                --vprecio := 0;
                 if SW = "1000" or sw = "0100" or sw = "0010" or sw = "0001" then next_state <= recibiendo_monedas;
                 else next_state <= reposo;
                 end if;
                 
             when recibiendo_monedas =>
-                vprecio := vprecio;
+                --vprecio := vprecio;
                 if reset = '1' then next_state <= operacion_cancelada;
                 -- Si se selecciona producto, calculamos el precio
                 elsif selec_producto /= "00" then
-                    case selec_producto is
-                        when "10" => vprecio := 100;
-                        when "01" => vprecio := 150;
-                        when others => vprecio := 9999;
-                    end case;
+--                    case selec_producto is
+--                        when "10" => vprecio := 100;
+--                        when "01" => vprecio := 150;
+--                        when others => vprecio := 9999;
+--                    end case;
                     --precio <= vprecio;
                     producto_seleccionado <= selec_producto;
                     -- Si el dinero introducido es suficiente, el siguiente paso es entregar el producto
-                    if (importe >= vprecio) then next_state <= entregando_producto;
+                    if (importe >= precio) then next_state <= entregando_producto;
+                    else next_state <= recibiendo_monedas;
                     end if;
                 else next_state <= recibiendo_monedas;
                 end if;
                                 
             when devolviendo_el_dinero =>
-                vprecio := vprecio;
+                --vprecio := vprecio;
                 if cantidad_restante = 0 then next_state <= reposo;
                 else next_state <= devolviendo_el_dinero;
                 end if;
                 
             when entregando_producto =>
-                vprecio := vprecio;
+                --vprecio := vprecio;
                 if tiempo_terminado = '1' then next_state <= producto_entregado;
                 else next_state <= entregando_producto;
                 end if;
             
             when operacion_cancelada =>
-                vprecio := vprecio;
+--                vprecio := vprecio;
                 next_state <= devolviendo_el_dinero;
             
             when producto_entregado =>
-                vprecio := vprecio;
+--                vprecio := vprecio;
                 next_state <= devolviendo_el_dinero;
             
             when others =>
-                vprecio := vprecio;
+--                vprecio := vprecio;
                 next_state <= reposo;
             
         end case;
         
-        precio <= vprecio;
+--        precio <= vprecio;
         
+    end process;
+    
+    calcular_precio : process(clk, current_state, selec_producto)
+    begin
+        -- Condiciones en las que se actualiza el precio
+        if current_state = reposo then
+            precio <= 0;
+        elsif (current_state = recibiendo_monedas and selec_producto /= "00") then
+            case selec_producto is
+                    when "01" => precio <= 150;
+                    when "10" => precio <= 100;
+                    when others => precio <= 9999;
+                end case;
+        
+        -- En el resto de los casos, conserva su valor
+        else
+            if rising_edge(clk) then precio <= precio;
+            end if;
+        end if;
     end process;
     
     output_decod : process(current_state)
