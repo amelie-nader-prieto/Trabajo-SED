@@ -138,18 +138,17 @@ begin
             when reposo =>
                 -- debería resetearse el contador 
                 activar_contador <= '0'; devolver_dinero <= '0';
-                i_cantidad_a_devolver <= 0; producto <= "00";
+                producto <= "00";
                 i_reset_contador <= not reset;
                 
             when recibiendo_monedas =>
                 activar_contador <= '1'; devolver_dinero <= '0';
-                i_cantidad_a_devolver <= 0; producto <= "00";
+                producto <= "00";
                 i_reset_contador <= not reset;
                 
             when devolviendo_el_dinero =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
-                i_cantidad_a_devolver <= i_cantidad_a_devolver;
                 i_reset_contador <= not reset;
                 
             when entregando_producto =>
@@ -160,14 +159,11 @@ begin
                     when "01" => producto <= "01";
                     when others => producto <="00";
                 end case;
-                i_cantidad_a_devolver <= i_cantidad_a_devolver;
                 i_reset_contador <= not reset;
                 
             when operacion_cancelada =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
-                -- al cancelar la operación, el siguiente paso es devolver todo el dinero que se ha introducido.
-                i_cantidad_a_devolver <= importe;
                 i_reset_contador <= not reset;
                 if importe /= 0 then
                     activar_contador <= '1';
@@ -177,7 +173,6 @@ begin
             when producto_entregado =>
                 activar_contador <= '0'; devolver_dinero <= '1';
                 producto <= "00";
-                i_cantidad_a_devolver <= importe - precio;
                 i_reset_contador <= not reset;
                 if importe /= 0 then
                     activar_contador <= '1';
@@ -186,6 +181,23 @@ begin
             
         end case;
         
+    end process;
+    
+    -- Para actualizar la cantidad a devolver
+    output_decod_2 : process(clk, current_state)
+    begin
+        -- Estados en los que debe actualizarse la cantidad a devolver
+        if current_state = reposo then
+            i_cantidad_a_devolver <= 0;
+        elsif current_state = operacion_cancelada then
+            i_cantidad_a_devolver <= importe;
+        elsif current_state = producto_entregado then
+            i_cantidad_a_devolver <= importe - precio;
+            
+        -- En el resto de los casos, conserva su valor
+        elsif rising_edge(clk) then
+            i_cantidad_a_devolver <= i_cantidad_a_devolver;
+        end if;
     end process;
     
     cantidad_a_devolver <= i_cantidad_a_devolver;
