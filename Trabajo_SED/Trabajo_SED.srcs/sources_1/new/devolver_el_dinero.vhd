@@ -85,7 +85,7 @@ begin
              
     end process;
     
-    output_decod : process(current_state)
+    output_decod : process(current_state, clk)
         variable next_moneda : integer := 0;
     begin
         next_moneda := 0;
@@ -98,11 +98,14 @@ begin
             when devolver10 => devolver_monedas <= "0001"; next_moneda := 10;
             when others => devolver_monedas <= "0000";
         end case;
-        if current_state = entrada_cambiada then
-            dinero_restante <= cantidad;
-        else
-            dinero_restante <= dinero_restante - next_moneda;
-        end if; 
+        
+        if rising_edge(clk) then
+            if current_state = entrada_cambiada then
+                dinero_restante <= cantidad;
+            else
+                dinero_restante <= dinero_restante - next_moneda;
+            end if;
+        end if;
     end process;
     
     cantidad_restante <= dinero_restante;
