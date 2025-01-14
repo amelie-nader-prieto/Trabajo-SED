@@ -1,7 +1,7 @@
-Running: xsim.dir/devolver_el_dinero_tb_behav/xsimk.exe -simmode gui -wdb devolver_el_dinero_tb_behav.wdb -simrunnum 0 -socket 55963
+Running: xsim.dir/devolver_el_dinero_tb_behav/xsimk.exe -simmode gui -wdb devolver_el_dinero_tb_behav.wdb -simrunnum 0 -socket 60388
 Design successfully loaded
-Design Loading Memory Usage: 7688 KB (Peak: 7688 KB)
+Design Loading Memory Usage: 7708 KB (Peak: 7708 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 8316 KB (Peak: 8316 KB)
+Simulation Memory Usage: 8216 KB (Peak: 8216 KB)
 Simulation CPU Usage: 61 ms

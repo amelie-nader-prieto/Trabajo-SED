@@ -25,6 +25,8 @@ architecture Behavioral of devolver_el_dinero is
     signal count : integer := 0;
     constant count_max : integer := 10; -- VALOR PARA SIMULAR
     -- constant count_max : integer := 100_000_000; -- VALOR REAL
+    
+    signal next_restante : integer := 0;
 
 begin
 
@@ -85,7 +87,7 @@ begin
              
     end process;
     
-    output_decod : process(current_state, clk)
+    output_decod : process(current_state)
         variable next_moneda : integer := 0;
     begin
         next_moneda := 0;
@@ -99,12 +101,18 @@ begin
             when others => devolver_monedas <= "0000";
         end case;
         
+        if current_state = entrada_cambiada then
+            next_restante <= cantidad;
+        else
+            next_restante <= dinero_restante - next_moneda;
+        end if;
+        
+    end process;
+    
+    reg_dinero_restante : process(clk)
+    begin
         if rising_edge(clk) then
-            if current_state = entrada_cambiada then
-                dinero_restante <= cantidad;
-            else
-                dinero_restante <= dinero_restante - next_moneda;
-            end if;
+            dinero_restante <= next_restante;
         end if;
     end process;
     
