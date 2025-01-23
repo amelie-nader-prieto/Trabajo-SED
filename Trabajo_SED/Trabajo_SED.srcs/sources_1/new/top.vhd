@@ -8,8 +8,8 @@ entity top is
         rst       : IN std_logic;                             
         interruptor:in std_logic_vector (3 downto 0);
         in_pulsadores:in std_logic_vector (1 downto 0);
-        selec:out std_logic_vector (2 downto 0);
-        digsel:out std_logic_vector (6 downto 0);
+        segmentos : OUT std_logic_vector(7 DOWNTO 0);
+        digsel:out std_logic_vector (7 downto 0);
         entrega_producto:out std_logic_vector(1 downto 0);
         devolver_monedas:out std_logic_vector (3 downto 0)
         
@@ -33,16 +33,19 @@ COMPONENT boton_reset
             salida_reset: out std_logic
         );
     END COMPONENT;
- COMPONENT control_display
+ 
+COMPONENT control_display IS
     PORT (
         clk       : IN std_logic;                             
         rst       : IN std_logic;                             
-        numero    : IN integer ; 
-        enable     :in std_logic;               
-        segmentos : OUT std_logic_vector(6 DOWNTO 0);        
-        sele      : OUT std_logic_vector(2 DOWNTO 0)          
-);
-END COMPONENT;   
+        numero    : IN integer range 0 to 200;  
+        enable    : in std_logic;               
+        digsel : OUT std_logic_vector(7 DOWNTO 0);
+        segmentos : OUT std_logic_vector(7 DOWNTO 0)       
+          
+             
+    );
+END COMPONENT; 
  COMPONENT interruptores
     PORT (
        clk:in std_logic;
@@ -94,8 +97,9 @@ begin
         rst=>reset,                     
         numero=>imp_tot,  
         enable=>act_cont,       
-        segmentos=>digsel,      
-        sele =>selec
+        segmentos=>segmentos,      
+       digsel =>digsel
+    
         );
   Inst_interruptores: interruptores
         PORT MAP (

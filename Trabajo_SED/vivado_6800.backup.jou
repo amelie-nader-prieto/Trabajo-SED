@@ -1,0 +1,120 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+<<<<<<< Updated upstream
+# Start of session at: Tue Jan 14 19:07:26 2025
+# Process ID: 6800
+# Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15460 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/vivado.log
+# Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED\vivado.jou
+# Running On        :AMELIE
+=======
+# Start of session at: Wed Jan  8 12:20:17 2025
+# Process ID: 21116
+# Current directory: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14852 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Log file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/vivado.log
+# Journal file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED\vivado.jou
+# Running On        :LAPTOP-D1CFJ21I
+>>>>>>> Stashed changes
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+# CPU Frequency     :1190 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+<<<<<<< Updated upstream
+# Host memory       :8377 MB
+# Swap memory       :7516 MB
+# Total Virtual     :15893 MB
+# Available Virtual :7131 MB
+=======
+# Host memory       :8266 MB
+# Swap memory       :8053 MB
+# Total Virtual     :16319 MB
+# Available Virtual :5067 MB
+>>>>>>> Stashed changes
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
+update_compile_order -fileset sources_1
+<<<<<<< Updated upstream
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top devolver_el_dinero_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
+source devolver_el_dinero_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
+source devolver_el_dinero_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/Parte_logica_tb_behav.wcfg
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED/Trabajo_SED/devolver_el_dinero_tb_behav.wcfg
+source devolver_el_dinero_tb.tcl
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+run 500 ns
+close_sim
+=======
+reorder_files -fileset constrs_1 -before C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc
+>>>>>>> Stashed changes
