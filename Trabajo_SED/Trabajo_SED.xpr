@@ -128,8 +128,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/control_display.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sources_1/new/control_display.vhd"/>
-          <Attr Name="ImportTime" Val="1734611126"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/control_display/control/control.srcs/sources_1/new/control_display.vhd"/>
+          <Attr Name="ImportTime" Val="1737658662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -142,6 +142,14 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/devolver_el_dinero.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/display.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/control_display/control/control.srcs/sources_1/new/display.vhd"/>
+          <Attr Name="ImportTime" Val="1737657434"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
