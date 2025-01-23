@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 15.12.2024 01:01:32
--- Design Name: 
--- Module Name: entero_bcd - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -28,13 +8,13 @@ entity entero_bcd is
         clk : in std_logic;
         rst : in std_logic;
         enable: in std_logic;
-        entero : in integer;  
-        bcd : out std_logic_vector(11 downto 0)
+        entero : in integer range 0 to 200;  
+        bcd : out std_logic_vector(3 downto 0)
     );
-end entero_bcd;
+end entity;
 
 architecture Behavioral of entero_bcd is
-    signal bcd_o : unsigned(11 downto 0);  
+    signal bcd_o : unsigned(3 downto 0);  
 begin
 
     process(clk, rst)
@@ -43,8 +23,7 @@ begin
             bcd_o <= (others => '0');  
         elsif rising_edge(clk) then
             if enable='1' then 
-                bcd_o(11 downto 8) <= to_unsigned(entero / 100, 4);  
-                bcd_o(7 downto 4)  <= to_unsigned(entero / 10, 4);   
+                 
                 bcd_o(3 downto 0)  <= to_unsigned(entero mod 10, 4);  
             end if;
         end if;
@@ -54,3 +33,4 @@ begin
     bcd <= std_logic_vector(bcd_o);
 
 end Behavioral;
+

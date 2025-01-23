@@ -162,8 +162,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/entero_bcd.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../2025-2025/Primer cuatri/SED/Lab/control_display/control_display.srcs/sources_1/new/entero_bcd.vhd"/>
-          <Attr Name="ImportTime" Val="1734546454"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/control_display/control/control.srcs/sources_1/imports/new/entero_bcd.vhd"/>
+          <Attr Name="ImportTime" Val="1737658654"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
