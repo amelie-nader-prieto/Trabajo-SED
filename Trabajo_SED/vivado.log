@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jan 23 21:42:53 2025
-# Process ID: 8668
+# Start of session at: Fri Jan 24 00:10:49 2025
+# Process ID: 11088
 # Current directory: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12592 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12752 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :LAPTOP-D1CFJ21I
@@ -19,10 +19,10 @@
 # Host memory       :8266 MB
 # Swap memory       :6979 MB
 # Total Virtual     :15245 MB
-# Available Virtual :8686 MB
+# Available Virtual :5949 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
+open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpININFO: [Common 17-41] Interrupt caught. Command should exit soon.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -108,84 +108,35 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/decoder.vhd'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:50 ; elapsed = 00:00:25 . Memory (MB): peak = 1501.031 ; gain = 459.117
-update_compile_order -fileset sources_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: top
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6504
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2353.203 ; gain = 442.617
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:19]
-INFO: [Synth 8-3491] module 'boton_reset' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:5' bound to instance 'Inst_boton_reset' of component 'boton_reset' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'boton_reset' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:13]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:10]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'boton_reset' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:13]
-INFO: [Synth 8-3491] module 'control_display' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:5' bound to instance 'Inst_control_display' of component 'control_display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'control_display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:18]
-INFO: [Synth 8-3491] module 'entero_bcd' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd:26' bound to instance 'Inst_entero_bcd' of component 'entero_bcd' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'entero_bcd' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'entero_bcd' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd:36]
-ERROR: [Synth 8-549] port width mismatch for port 'bcd': port width = 12, actual width = 4 [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:29]
-ERROR: [Synth 8-285] failed synthesizing module 'control_display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:18]
-ERROR: [Synth 8-285] failed synthesizing module 'top' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:19]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2462.168 ; gain = 551.582
----------------------------------------------------------------------------------
-RTL Elaboration failed
-20 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
-synth_design failed
-ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
-export_ip_user_files -of_objects  [get_files C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-file delete -force C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-import_files -norecurse C:/Users/irene/Downloads/control_display/control/control.srcs/sources_1/imports/new/entero_bcd.vhd
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-export_ip_user_files -of_objects  [get_files C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-file delete -force C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-import_files -norecurse C:/Users/irene/Downloads/control_display/control/control.srcs/sources_1/imports/new/entero_bcd.vhd
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+INFO: [Common 17-344] 'open_project' was cancelled
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 23 21:51:30 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 00:27:01 2025...
+u670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:01:18 ; elapsed = 00:00:46 . Memory (MB): peak = 1494.082 ; gain = 450.281
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+INFO: [Project 1-1161] Replacing file C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp with file C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/top.dcp
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+ERROR: [Common 17-180] Spawn failed: No error
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 00:29:29 2025...

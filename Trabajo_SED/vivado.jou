@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jan 23 21:42:53 2025
-# Process ID: 8668
+# Start of session at: Fri Jan 24 00:10:49 2025
+# Process ID: 11088
 # Current directory: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12592 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12752 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :LAPTOP-D1CFJ21I
@@ -19,19 +19,9 @@
 # Host memory       :8266 MB
 # Swap memory       :6979 MB
 # Total Virtual     :15245 MB
-# Available Virtual :8686 MB
+# Available Virtual :5949 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
-update_compile_order -fileset sources_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-export_ip_user_files -of_objects  [get_files C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-file delete -force C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-import_files -norecurse C:/Users/irene/Downloads/control_display/control/control.srcs/sources_1/imports/new/entero_bcd.vhd
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-file delete -force C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-import_files -norecurse C:/Users/irene/Downloads/control_display/control/control.srcs/sources_1/imports/new/entero_bcd.vhd
-update_compile_order -fileset sources_1
+open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpupdate_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
