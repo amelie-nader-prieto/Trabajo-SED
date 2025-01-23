@@ -14,7 +14,7 @@ architecture Behavioral of sumadordemonedas is
 
 begin
     process(clk,clr_n)
-    variable count: integer range 0 to 100;
+    variable count: integer:=0;
     
     begin
         if enable = '1' then
