@@ -36,11 +36,9 @@ COMPONENT boton_reset
  
 COMPONENT control_display IS
     PORT (
-        clk       : IN std_logic;                             
-        rst       : IN std_logic;                             
-        numero    : IN integer range 0 to 200;  
-        enable    : in std_logic;               
-        digsel : OUT std_logic_vector(7 DOWNTO 0);
+         clk       : IN std_logic;                             
+         numero    : IN integer range 0 to 200;             
+         digsel : OUT std_logic_vector(7 DOWNTO 0);
         segmentos : OUT std_logic_vector(7 DOWNTO 0)       
           
              
@@ -93,13 +91,10 @@ begin
         );
   Inst_control_display:control_display
         PORT MAP (
-        clk=>clk,                            
-        rst=>reset,                     
-        numero=>imp_tot,  
-        enable=>act_cont,       
+        clk=>clk,                                                 
+        numero=>imp_tot,         
         segmentos=>segmentos,      
-       digsel =>digsel
-    
+         digsel =>digsel
         );
   Inst_interruptores: interruptores
         PORT MAP (

@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jan 23 21:10:23 2025
-# Process ID: 15916
+# Start of session at: Fri Jan 24 00:30:24 2025
+# Process ID: 14856
 # Current directory: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4072 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2056 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :LAPTOP-D1CFJ21I
@@ -17,10 +17,18 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8266 MB
-# Swap memory       :7283 MB
-# Total Virtual     :15550 MB
-# Available Virtual :2468 MB
+# Swap memory       :6979 MB
+# Total Virtual     :15245 MB
+# Available Virtual :6708 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 update_compile_order -fileset sources_1
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -5,9 +5,7 @@ USE IEEE.NUMERIC_STD.ALL;
 ENTITY control_display IS
     PORT (
         clk       : IN std_logic;                             
-        rst       : IN std_logic;                             
-        numero    : IN integer range 0 to 200;  
-        enable    : in std_logic;               
+        numero    : IN integer range 0 to 200;             
         digsel : OUT std_logic_vector(7 DOWNTO 0);
         segmentos : OUT std_logic_vector(7 DOWNTO 0)       
           
@@ -22,21 +20,17 @@ ARCHITECTURE Behavioral OF control_display IS
     
     COMPONENT entero_bcd
         PORT (
-            clk    : IN std_logic;
-            rst    : IN std_logic;
-            enable: In std_logic;
-            entero : IN integer range 0 to 200;
-            bcd    : OUT std_logic_vector(3 DOWNTO 0)
+            valor_moneda : in integer range 0 to 150; -- Cambiado a entrada para usar en el with
+            bcd          : out STD_LOGIC_VECTOR (3 downto 0) -- 4 bits para representar el BCD
         );
     END COMPONENT;
 
 COMPONENT display is
   PORT(
-    cuenta : IN std_logic_vector(3 DOWNTO 0);
-    clk: IN std_logic;
-   
-    digsel : OUT std_logic_vector(7 DOWNTO 0);
-    segmentos : OUT std_logic_vector(7 DOWNTO 0) --teniendo en cuenta el punto del display ser  vector de 8 bits
+     cuenta : IN std_logic_vector(3 DOWNTO 0);
+     clk: IN std_logic;
+     digsel : OUT std_logic_vector(7 DOWNTO 0);
+     segmentos : OUT std_logic_vector(7 DOWNTO 0) --teniendo en cuenta el punto del display ser  vector de 8 bits
     );
 end COMPONENT;
 
@@ -48,15 +42,12 @@ BEGIN
 
     Inst_entero_bcd: entero_bcd
         PORT MAP (
-            clk    => clk,
-            rst    => rst,
-            enable=>enable,
-            entero => numero,
-            bcd    => bcd_out
+          valor_moneda  => numero,
+           bcd=>bcd_out
         );
       
           
-Inst_display: display
+    Inst_display: display
         PORT MAP (
             clk    => clk,
             segmentos => segmentos,

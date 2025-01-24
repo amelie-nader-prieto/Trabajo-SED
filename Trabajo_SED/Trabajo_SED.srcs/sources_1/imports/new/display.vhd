@@ -1,8 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
- use ieee.numeric_std.all; 
-
- 
+use ieee.numeric_std.all; 
 
 entity display is
   PORT(
@@ -14,13 +12,11 @@ entity display is
     );
 end display;
 
- 
-
 architecture Behavioral of display is
-    signal numero : integer;
+    signal valor_moneda : integer;
     signal anodos: natural range 0 to 7 :=0;
-     signal show: natural range 0 to 18 :=0;
-     signal clk_counter: natural range 0 to 20000 :=0;
+    signal muetra: natural range 0 to 18 :=0;
+    signal clk_counter: natural range 0 to 30000 :=0;
 begin
    process(clk)
     begin
@@ -32,21 +28,19 @@ begin
             anodos<=0;
          end if;
         
-         if clk_counter>=20000 then
+         if clk_counter>=30000 then
             clk_counter<=0;
             anodos<=anodos +1;
          end if;
        end if;
-
- 
 
     end process;
    
    --Activar display
    process(anodos)
      begin
-     numero <= to_integer(unsigned(cuenta));
-      if numero<=150 then --entre 0  a 1.5 
+     valor_moneda <= to_integer(unsigned(cuenta));
+      if valor_moneda<=150 then --entre 0  a 1.5 
          case anodos is
            when 0=>digsel <="11111110";
            when 1=>digsel <="11111101";
@@ -55,164 +49,162 @@ begin
          end case;
        end if;
  
-   
    end process;
    
    process(anodos)
      begin
-     if numero=0 then --0 
+     if valor_moneda=0 then --0 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=0;--n  0
-           when 2=>show<=16; --n cero con punto
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=0;--n  0
+           when 2=>muetra<=16; --n cero con punto
+           when others=>muetra<=12;
          end case;
         
        else
         
-        if numero=10 then --0.1 
+        if valor_moneda=10 then --0.1 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=1;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=1;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=20 then --0.2 
+        if valor_moneda=20 then --0.2 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=2;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=2;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=30 then --0.3 
+        if valor_moneda=30 then --0.3 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=3;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=3;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=40 then --0.4 
+        if valor_moneda=40 then --0.4 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=4;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=4;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=50 then --0.5 
+        if valor_moneda=50 then --0.5 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=5;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=5;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=60 then --0.6 
+        if valor_moneda=60 then --0.6 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=6;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=6;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=70 then --0.7 
+        if valor_moneda=70 then --0.7 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=7;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=7;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=80 then --0.8 
+        if valor_moneda=80 then --0.8 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=8;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=8;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=90 then --0.9 
+        if valor_moneda=90 then --0.9 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=9;
-           when 2=>show<=10;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=9;
+           when 2=>muetra<=10;
+           when others=>muetra<=12;
          end case;
         end if;
         
-        if numero=100 then --1.0 
+        if valor_moneda=100 then --1.0 
         case anodos is
-           when 0=>show<=0;
-           when 1=>show<=0;
-           when 2=>show<=11;
-           when others=>show<=12;
+           when 0=>muetra<=0;
+           when 1=>muetra<=0;
+           when 2=>muetra<=11;
+           when others=>muetra<=12;
          end case;
         end if;
 
-if numero=110 then --1.1 
+if valor_moneda=110 then --1.1 
     case anodos is
-        when 0=>show<=0;
-        when 1=>show<=1;
-        when 2=>show<=11;
-        when others=>show<=12;
+        when 0=>muetra<=0;
+        when 1=>muetra<=1;
+        when 2=>muetra<=11;
+        when others=>muetra<=12;
     end case;
 end if;
 
-if numero=120 then --1.2 
+if valor_moneda=120 then --1.2 
     case anodos is
-        when 0=>show<=0;
-        when 1=>show<=2;
-        when 2=>show<=11;
-        when others=>show<=12;
+        when 0=>muetra<=0;
+        when 1=>muetra<=2;
+        when 2=>muetra<=11;
+        when others=>muetra<=12;
     end case;
 end if;
 
-if numero=130 then --1.3 
+if valor_moneda=130 then --1.3 
     case anodos is
-        when 0=>show<=0;
-        when 1=>show<=3;
-        when 2=>show<=11;
-        when others=>show<=12;
+        when 0=>muetra<=0;
+        when 1=>muetra<=3;
+        when 2=>muetra<=11;
+        when others=>muetra<=12;
     end case;
 end if;
 
-if numero=140 then --1.4 
+if valor_moneda=140 then --1.4 
     case anodos is
-        when 0=>show<=0;
-        when 1=>show<=4;
-        when 2=>show<=11;
-        when others=>show<=12;
+        when 0=>muetra<=0;
+        when 1=>muetra<=4;
+        when 2=>muetra<=11;
+        when others=>muetra<=12;
     end case;
 end if;
         
-      if numero=150 then --1.5 
+      if valor_moneda=150 then --1.5 
     case anodos is
-        when 0=>show<=0;
-        when 1=>show<=5;
-        when 2=>show<=11;
-        when others=>show<=12;
+        when 0=>muetra<=0;
+        when 1=>muetra<=5;
+        when 2=>muetra<=11;
+        when others=>muetra<=12;
     end case;
 end if;
        end if;
          
-        
    end process;
   
    --Activar los segmentos del display
-   process(show)
+   process(muetra)
      begin
-      case show is
+      case muetra is
        when 0=>segmentos<="10000001"; --0
        when 1=>segmentos<="11001111"; --1
        when 2=>segmentos<="10010010"; --2
@@ -229,8 +221,5 @@ end if;
        when others=>segmentos<="11111111"; 
      end case;
    end process;
-
- 
-
 
 end Behavioral;

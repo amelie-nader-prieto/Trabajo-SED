@@ -1,0 +1,372 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Jan 24 00:32:24 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 487.785 ; gain = 200.637
+Command: read_checkpoint -auto_incremental -incremental C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1358.234 ; gain = 447.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:19]
+INFO: [Synth 8-3491] module 'boton_reset' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:5' bound to instance 'Inst_boton_reset' of component 'boton_reset' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'boton_reset' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:13]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'boton_reset' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd:13]
+INFO: [Synth 8-3491] module 'control_display' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:5' bound to instance 'Inst_control_display' of component 'control_display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'control_display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:18]
+INFO: [Synth 8-3491] module 'entero_bcd' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd:6' bound to instance 'Inst_entero_bcd' of component 'entero_bcd' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'entero_bcd' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'entero_bcd' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd:16]
+INFO: [Synth 8-3491] module 'display' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:7' bound to instance 'Inst_display' of component 'display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:19]
+WARNING: [Synth 8-614] signal 'cuenta' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:46]
+WARNING: [Synth 8-614] signal 'numero' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:46]
+WARNING: [Synth 8-614] signal 'numero' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'display' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'control_display' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd:18]
+INFO: [Synth 8-3491] module 'interruptores' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:4' bound to instance 'Inst_interruptores' of component 'interruptores' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'interruptores' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:12]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR_3' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:33]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR_2' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:38]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR_1' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:43]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR_0' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:48]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR_3' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:54]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR_2' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:59]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR_1' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:64]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR_0' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'interruptores' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd:12]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd:5' bound to instance 'Inst_FSM' of component 'FSM' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd:17]
+INFO: [Synth 8-3491] module 'FSM_principal' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:5' bound to instance 'FSM_Master' of component 'FSM_principal' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'FSM_principal' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:19]
+WARNING: [Synth 8-614] signal 'RESET' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:154]
+WARNING: [Synth 8-614] signal 'producto_seleccionado' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:154]
+WARNING: [Synth 8-614] signal 'importe' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:154]
+WARNING: [Synth 8-614] signal 'importe' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:207]
+WARNING: [Synth 8-614] signal 'precio' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:207]
+INFO: [Synth 8-256] done synthesizing module 'FSM_principal' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd:19]
+INFO: [Synth 8-3491] module 'devolver_el_dinero' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:5' bound to instance 'FSM_Slave' of component 'devolver_el_dinero' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'devolver_el_dinero' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:53]
+WARNING: [Synth 8-614] signal 'tiempo_terminado' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:53]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:68]
+WARNING: [Synth 8-614] signal 'cantidad' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:90]
+WARNING: [Synth 8-614] signal 'dinero_restante' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'devolver_el_dinero' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd:17]
+INFO: [Synth 8-3491] module 'CONTADOR_DE_MONEDAS' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:3' bound to instance 'Inst_CONTADOR_DE_MONEDAS' of component 'CONTADOR_DE_MONEDAS' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'CONTADOR_DE_MONEDAS' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+INFO: [Synth 8-3491] module 'decodificador_moneda' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:14' bound to instance 'Inst_decodificador_moneda' of component 'decodificador_moneda' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'decodificador_moneda' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'decodificador_moneda' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd:19]
+INFO: [Synth 8-3491] module 'sumadordemonedas' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:5' bound to instance 'Inst_sumadordemonedas' of component 'sumadordemonedas' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'sumadordemonedas' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sumadordemonedas' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd:13]
+WARNING: [Synth 8-7043] port width mismatch for port 'cuenta': port width = 8, actual width = 7 (integer) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'CONTADOR_DE_MONEDAS' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd:12]
+WARNING: [Synth 8-7043] port width mismatch for port 'total': port width = 7, actual width = 32 (integer) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:128]
+INFO: [Synth 8-3491] module 'pulsadores' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:5' bound to instance 'Inst_pulsadores' of component 'pulsadores' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'pulsadores' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:13]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR_1' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:36]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_SYNCHRNZR_2' of component 'SYNCHRNZR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:41]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR_1' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:47]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd:3' bound to instance 'Inst_EDGEDTCTR_2' of component 'EDGEDTCTR' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'pulsadores' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1471.219 ; gain = 560.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1471.219 ; gain = 560.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1471.219 ; gain = 560.820
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1471.219 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1515.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1515.582 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM_principal'
+WARNING: [Synth 8-327] inferring latch for variable 'digsel_reg' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'show_reg' [C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd:65]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  reposo |                              000 |                              000
+      recibiendo_monedas |                              101 |                              001
+     operacion_cancelada |                              011 |                              100
+     entregando_producto |                              100 |                              011
+      producto_entregado |                              001 |                              101
+   devolviendo_el_dinero |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSM_principal'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	   3 Input   15 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 11    
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 12    
+	   6 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_control_display/Inst_display/digsel_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | Inst_boton_reset/Inst_EDGEDTCTR/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_interruptores/Inst_EDGEDTCTR_3/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_interruptores/Inst_EDGEDTCTR_2/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_interruptores/Inst_EDGEDTCTR_1/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_interruptores/Inst_EDGEDTCTR_0/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_pulsadores/Inst_EDGEDTCTR_1/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_pulsadores/Inst_EDGEDTCTR_2/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    63|
+|3     |LUT1   |     5|
+|4     |LUT2   |   222|
+|5     |LUT3   |    66|
+|6     |LUT4   |    39|
+|7     |LUT5   |    86|
+|8     |LUT6   |    52|
+|9     |SRL16E |     7|
+|10    |FDCE   |    56|
+|11    |FDPE   |    47|
+|12    |FDRE   |   184|
+|13    |LD     |     5|
+|14    |LDC    |    22|
+|15    |IBUF   |     8|
+|16    |OBUF   |    22|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1515.582 ; gain = 560.820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1515.582 ; gain = 605.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1515.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1515.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  LD => LDCE: 5 instances
+  LDC => LDCE: 22 instances
+
+Synth Design complete | Checksum: f6c60a97
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 1515.582 ; gain = 1020.051
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1515.582 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 00:33:39 2025...

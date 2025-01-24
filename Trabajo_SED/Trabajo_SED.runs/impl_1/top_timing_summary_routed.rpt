@@ -1,0 +1,823 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Jan 24 00:35:59 2025
+| Host         : LAPTOP-D1CFJ21I running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     294         
+LUTAR-1    Warning           LUT drives async reset alert    46          
+TIMING-20  Warning           Non-clocked latch               27          
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (838)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (595)
+5. checking no_input_delay (7)
+6. checking no_output_delay (15)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (838)
+--------------------------
+ There are 294 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: Inst_CONTADOR_DE_MONEDAS/Inst_sumadordemonedas/count_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: Inst_CONTADOR_DE_MONEDAS/Inst_sumadordemonedas/count_reg[2]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: Inst_CONTADOR_DE_MONEDAS/Inst_sumadordemonedas/count_reg[3]/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: Inst_CONTADOR_DE_MONEDAS/Inst_sumadordemonedas/count_reg[4]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: Inst_CONTADOR_DE_MONEDAS/Inst_sumadordemonedas/count_reg[5]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Inst_CONTADOR_DE_MONEDAS/Inst_sumadordemonedas/count_reg[6]/Q (HIGH)
+
+ There are 22 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/FSM_sequential_current_state_reg[0]/Q (HIGH)
+
+ There are 22 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/FSM_sequential_current_state_reg[1]/Q (HIGH)
+
+ There are 22 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/FSM_sequential_current_state_reg[2]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[0]_C/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[0]_P/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[10]_C/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[10]_P/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[13]_C/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[13]_LDC/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[13]_P/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[1]_C/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[1]_LDC/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[1]_P/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[2]_C/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[2]_LDC/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[2]_P/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[3]_C/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[3]_P/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[4]_C/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[4]_P/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[5]_C/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[5]_P/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[6]_C/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[6]_LDC/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[6]_P/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[7]_C/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[7]_LDC/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[7]_P/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[8]_C/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[8]_P/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[9]_C/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Master/precio_reg[9]_P/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[0]_C/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[0]_LDC/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[0]_P/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[1]_C/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[1]_P/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[2]_C/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[2]_LDC/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/current_state[2]_P/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[10]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[11]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[12]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[13]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[14]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[15]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[16]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[17]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[18]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[19]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[20]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[21]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[22]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[23]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[24]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[25]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[26]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[27]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[28]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[29]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[30]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[31]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[4]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[5]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[6]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[7]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[8]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/dinero_restante_reg[9]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: Inst_FSM/FSM_Slave/tiempo_terminado_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_control_display/Inst_entero_bcd/bcd_o_reg[1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_control_display/Inst_entero_bcd/bcd_o_reg[2]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_control_display/Inst_entero_bcd/bcd_o_reg[3]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_pulsadores/Inst_EDGEDTCTR_1/sreg_reg[0]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_pulsadores/Inst_EDGEDTCTR_1/sreg_reg[1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_pulsadores/Inst_EDGEDTCTR_1/sreg_reg[2]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_pulsadores/Inst_EDGEDTCTR_2/sreg_reg[0]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_pulsadores/Inst_EDGEDTCTR_2/sreg_reg[1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: Inst_pulsadores/Inst_EDGEDTCTR_2/sreg_reg[2]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (595)
+--------------------------------------------------
+ There are 595 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (7)
+------------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (15)
+--------------------------------
+ There are 15 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  610          inf        0.000                      0                  610           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           610 Endpoints
+Min Delay           610 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Slave/current_state[1]_LDC/G
+                            (positive level-sensitive latch)
+  Destination:            devolver_monedas[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.940ns  (logic 4.587ns (51.305%)  route 4.353ns (48.695%))
+  Logic Levels:           4  (LDCE=1 LUT4=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y82         LDCE                         0.000     0.000 r  Inst_FSM/FSM_Slave/current_state[1]_LDC/G
+    SLICE_X11Y82         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_FSM/FSM_Slave/current_state[1]_LDC/Q
+                         net (fo=13, routed)          1.019     1.578    Inst_FSM/FSM_Slave/current_state[1]_LDC_n_0
+    SLICE_X8Y80          LUT6 (Prop_lut6_I4_O)        0.124     1.702 f  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[2]_inst_i_2/O
+                         net (fo=2, routed)           0.882     2.584    Inst_FSM/FSM_Slave/devolver_monedas_OBUF[2]_inst_i_2_n_0
+    SLICE_X6Y80          LUT4 (Prop_lut4_I0_O)        0.148     2.732 r  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.452     5.184    devolver_monedas_OBUF[2]
+    V17                  OBUF (Prop_obuf_I_O)         3.756     8.940 r  devolver_monedas_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     8.940    devolver_monedas[2]
+    V17                                                               r  devolver_monedas[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Slave/current_state[0]_C/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            devolver_monedas[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.884ns  (logic 4.801ns (54.039%)  route 4.083ns (45.961%))
+  Logic Levels:           4  (FDCE=1 LUT3=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y79          FDCE                         0.000     0.000 r  Inst_FSM/FSM_Slave/current_state[0]_C/C
+    SLICE_X8Y79          FDCE (Prop_fdce_C_Q)         0.518     0.518 r  Inst_FSM/FSM_Slave/current_state[0]_C/Q
+                         net (fo=6, routed)           0.683     1.201    Inst_FSM/FSM_Slave/current_state[0]_C_n_0
+    SLICE_X8Y81          LUT3 (Prop_lut3_I2_O)        0.148     1.349 r  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[3]_inst_i_2/O
+                         net (fo=11, routed)          1.118     2.467    Inst_FSM/FSM_Slave/devolver_monedas_OBUF[3]_inst_i_2_n_0
+    SLICE_X6Y80          LUT5 (Prop_lut5_I0_O)        0.356     2.823 r  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           2.282     5.105    devolver_monedas_OBUF[3]
+    U17                  OBUF (Prop_obuf_I_O)         3.779     8.884 r  devolver_monedas_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     8.884    devolver_monedas[3]
+    U17                                                               r  devolver_monedas[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Slave/current_state[0]_LDC/G
+                            (positive level-sensitive latch)
+  Destination:            devolver_monedas[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.497ns  (logic 4.608ns (54.227%)  route 3.889ns (45.773%))
+  Logic Levels:           4  (LDCE=1 LUT4=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y81         LDCE                         0.000     0.000 r  Inst_FSM/FSM_Slave/current_state[0]_LDC/G
+    SLICE_X11Y81         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_FSM/FSM_Slave/current_state[0]_LDC/Q
+                         net (fo=5, routed)           1.015     1.574    Inst_FSM/FSM_Slave/current_state[0]_LDC_n_0
+    SLICE_X8Y81          LUT6 (Prop_lut6_I1_O)        0.124     1.698 f  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[0]_inst_i_2/O
+                         net (fo=13, routed)          0.897     2.595    Inst_FSM/FSM_Slave/devolver_monedas_OBUF[0]_inst_i_2_n_0
+    SLICE_X8Y80          LUT4 (Prop_lut4_I3_O)        0.150     2.745 r  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.977     4.722    devolver_monedas_OBUF[0]
+    N14                  OBUF (Prop_obuf_I_O)         3.775     8.497 r  devolver_monedas_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     8.497    devolver_monedas[0]
+    N14                                                               r  devolver_monedas[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_control_display/Inst_display/show_reg[4]/G
+                            (positive level-sensitive latch)
+  Destination:            segmentos[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.281ns  (logic 4.474ns (54.034%)  route 3.806ns (45.966%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y85          LDCE                         0.000     0.000 r  Inst_control_display/Inst_display/show_reg[4]/G
+    SLICE_X0Y85          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_control_display/Inst_display/show_reg[4]/Q
+                         net (fo=8, routed)           0.840     1.399    Inst_control_display/Inst_display/show[4]
+    SLICE_X0Y86          LUT5 (Prop_lut5_I1_O)        0.152     1.551 r  Inst_control_display/Inst_display/segmentos_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           2.966     4.517    segmentos_OBUF[5]
+    R10                  OBUF (Prop_obuf_I_O)         3.763     8.281 r  segmentos_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     8.281    segmentos[5]
+    R10                                                               r  segmentos[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_control_display/Inst_display/show_reg[2]/G
+                            (positive level-sensitive latch)
+  Destination:            segmentos[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.202ns  (logic 4.493ns (54.783%)  route 3.709ns (45.217%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y85          LDCE                         0.000     0.000 r  Inst_control_display/Inst_display/show_reg[2]/G
+    SLICE_X0Y85          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_control_display/Inst_display/show_reg[2]/Q
+                         net (fo=8, routed)           1.017     1.576    Inst_control_display/Inst_display/show[2]
+    SLICE_X0Y86          LUT5 (Prop_lut5_I2_O)        0.154     1.730 r  Inst_control_display/Inst_display/segmentos_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           2.692     4.422    segmentos_OBUF[6]
+    T10                  OBUF (Prop_obuf_I_O)         3.780     8.202 r  segmentos_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     8.202    segmentos[6]
+    T10                                                               r  segmentos[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Slave/current_state[1]_LDC/G
+                            (positive level-sensitive latch)
+  Destination:            devolver_monedas[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.137ns  (logic 4.359ns (53.568%)  route 3.778ns (46.432%))
+  Logic Levels:           4  (LDCE=1 LUT4=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y82         LDCE                         0.000     0.000 r  Inst_FSM/FSM_Slave/current_state[1]_LDC/G
+    SLICE_X11Y82         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_FSM/FSM_Slave/current_state[1]_LDC/Q
+                         net (fo=13, routed)          1.019     1.578    Inst_FSM/FSM_Slave/current_state[1]_LDC_n_0
+    SLICE_X8Y80          LUT6 (Prop_lut6_I4_O)        0.124     1.702 f  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[2]_inst_i_2/O
+                         net (fo=2, routed)           0.882     2.584    Inst_FSM/FSM_Slave/devolver_monedas_OBUF[2]_inst_i_2_n_0
+    SLICE_X6Y80          LUT4 (Prop_lut4_I3_O)        0.124     2.708 r  Inst_FSM/FSM_Slave/devolver_monedas_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.877     4.585    devolver_monedas_OBUF[1]
+    R18                  OBUF (Prop_obuf_I_O)         3.552     8.137 r  devolver_monedas_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     8.137    devolver_monedas[1]
+    R18                                                               r  devolver_monedas[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_control_display/Inst_display/show_reg[4]/G
+                            (positive level-sensitive latch)
+  Destination:            segmentos[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.982ns  (logic 4.463ns (55.918%)  route 3.519ns (44.082%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y85          LDCE                         0.000     0.000 r  Inst_control_display/Inst_display/show_reg[4]/G
+    SLICE_X0Y85          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_control_display/Inst_display/show_reg[4]/Q
+                         net (fo=8, routed)           0.847     1.406    Inst_control_display/Inst_display/show[4]
+    SLICE_X0Y86          LUT5 (Prop_lut5_I0_O)        0.152     1.558 r  Inst_control_display/Inst_display/segmentos_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           2.671     4.230    segmentos_OBUF[3]
+    K13                  OBUF (Prop_obuf_I_O)         3.752     7.982 r  segmentos_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     7.982    segmentos[3]
+    K13                                                               r  segmentos[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_control_display/Inst_display/show_reg[0]/G
+                            (positive level-sensitive latch)
+  Destination:            segmentos[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.905ns  (logic 4.476ns (56.618%)  route 3.429ns (43.382%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y85          LDCE                         0.000     0.000 r  Inst_control_display/Inst_display/show_reg[0]/G
+    SLICE_X0Y85          LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  Inst_control_display/Inst_display/show_reg[0]/Q
+                         net (fo=7, routed)           0.894     1.453    Inst_control_display/Inst_display/show[0]
+    SLICE_X0Y85          LUT5 (Prop_lut5_I4_O)        0.153     1.606 r  Inst_control_display/Inst_display/segmentos_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           2.535     4.141    segmentos_OBUF[1]
+    T11                  OBUF (Prop_obuf_I_O)         3.764     7.905 r  segmentos_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     7.905    segmentos[1]
+    T11                                                               r  segmentos[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_control_display/Inst_display/anodos_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            digsel[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.832ns  (logic 4.216ns (53.834%)  route 3.616ns (46.166%))
+  Logic Levels:           3  (FDRE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y85          FDRE                         0.000     0.000 r  Inst_control_display/Inst_display/anodos_reg[1]/C
+    SLICE_X2Y85          FDRE (Prop_fdre_C_Q)         0.518     0.518 f  Inst_control_display/Inst_display/anodos_reg[1]/Q
+                         net (fo=10, routed)          0.850     1.368    Inst_control_display/Inst_display/anodos_reg[1]_0
+    SLICE_X0Y85          LUT3 (Prop_lut3_I2_O)        0.124     1.492 r  Inst_control_display/Inst_display/digsel_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.766     4.258    digsel_OBUF[2]
+    T9                   OBUF (Prop_obuf_I_O)         3.574     7.832 r  digsel_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.832    digsel[2]
+    T9                                                                r  digsel[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[0]_P/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            Inst_FSM/FSM_Slave/current_state[0]_C/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.755ns  (logic 2.327ns (30.005%)  route 5.428ns (69.995%))
+  Logic Levels:           8  (CARRY4=3 FDPE=1 LUT3=2 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y84          FDPE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[0]_P/C
+    SLICE_X6Y84          FDPE (Prop_fdpe_C_Q)         0.518     0.518 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[0]_P/Q
+                         net (fo=2, routed)           1.110     1.628    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[0]_P_n_0
+    SLICE_X6Y82          LUT3 (Prop_lut3_I0_O)        0.150     1.778 r  Inst_FSM/FSM_Master/cantidad_prev[0]_i_1/O
+                         net (fo=4, routed)           1.354     3.132    Inst_FSM/FSM_Slave/D[0]
+    SLICE_X9Y85          LUT6 (Prop_lut6_I1_O)        0.348     3.480 r  Inst_FSM/FSM_Slave/cantidad_prev1_carry_i_4/O
+                         net (fo=1, routed)           0.000     3.480    Inst_FSM/FSM_Slave/cantidad_prev1_carry_i_4_n_0
+    SLICE_X9Y85          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.012 r  Inst_FSM/FSM_Slave/cantidad_prev1_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.012    Inst_FSM/FSM_Slave/cantidad_prev1_carry_n_0
+    SLICE_X9Y86          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.126 r  Inst_FSM/FSM_Slave/cantidad_prev1_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.126    Inst_FSM/FSM_Slave/cantidad_prev1_carry__0_n_0
+    SLICE_X9Y87          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     4.354 r  Inst_FSM/FSM_Slave/cantidad_prev1_carry__1/CO[2]
+                         net (fo=7, routed)           1.629     5.983    Inst_FSM/FSM_Slave/cantidad_prev_reg[30]_0[0]
+    SLICE_X9Y81          LUT6 (Prop_lut6_I5_O)        0.313     6.296 r  Inst_FSM/FSM_Slave/current_state[0]_P_i_1/O
+                         net (fo=2, routed)           1.001     7.297    Inst_FSM/FSM_Slave/current_state[0]_P_i_1_n_0
+    SLICE_X8Y81          LUT3 (Prop_lut3_I0_O)        0.124     7.421 r  Inst_FSM/FSM_Slave/current_state[0]_C_i_1/O
+                         net (fo=1, routed)           0.335     7.755    Inst_FSM/FSM_Slave/current_state[0]_C_i_1_n_0
+    SLICE_X8Y79          FDCE                                         r  Inst_FSM/FSM_Slave/current_state[0]_C/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Inst_pulsadores/Inst_SYNCHRNZR_1/sreg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_pulsadores/Inst_SYNCHRNZR_1/SYNC_OUT_reg_srl2/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.234ns  (logic 0.128ns (54.791%)  route 0.106ns (45.209%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y90          FDRE                         0.000     0.000 r  Inst_pulsadores/Inst_SYNCHRNZR_1/sreg_reg[0]/C
+    SLICE_X1Y90          FDRE (Prop_fdre_C_Q)         0.128     0.128 r  Inst_pulsadores/Inst_SYNCHRNZR_1/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.106     0.234    Inst_pulsadores/Inst_SYNCHRNZR_1/sreg_reg_n_0_[0]
+    SLICE_X2Y90          SRL16E                                       r  Inst_pulsadores/Inst_SYNCHRNZR_1/SYNC_OUT_reg_srl2/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_interruptores/Inst_SYNCHRNZR_1/sreg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_interruptores/Inst_SYNCHRNZR_1/SYNC_OUT_reg_srl2/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.242ns  (logic 0.141ns (58.263%)  route 0.101ns (41.737%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y90          FDRE                         0.000     0.000 r  Inst_interruptores/Inst_SYNCHRNZR_1/sreg_reg[0]/C
+    SLICE_X1Y90          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_interruptores/Inst_SYNCHRNZR_1/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.101     0.242    Inst_interruptores/Inst_SYNCHRNZR_1/sreg_reg_n_0_[0]
+    SLICE_X2Y90          SRL16E                                       r  Inst_interruptores/Inst_SYNCHRNZR_1/SYNC_OUT_reg_srl2/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_interruptores/Inst_SYNCHRNZR_2/sreg_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Inst_interruptores/Inst_SYNCHRNZR_2/SYNC_OUT_reg_srl2/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.242ns  (logic 0.141ns (58.263%)  route 0.101ns (41.737%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y90          FDRE                         0.000     0.000 r  Inst_interruptores/Inst_SYNCHRNZR_2/sreg_reg[0]/C
+    SLICE_X1Y90          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  Inst_interruptores/Inst_SYNCHRNZR_2/sreg_reg[0]/Q
+                         net (fo=1, routed)           0.101     0.242    Inst_interruptores/Inst_SYNCHRNZR_2/sreg_reg_n_0_[0]
+    SLICE_X2Y90          SRL16E                                       r  Inst_interruptores/Inst_SYNCHRNZR_2/SYNC_OUT_reg_srl2/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[27]_P/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[27]_C/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.250ns  (logic 0.128ns (51.112%)  route 0.122ns (48.888%))
+  Logic Levels:           1  (FDPE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y86         FDPE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[27]_P/C
+    SLICE_X13Y86         FDPE (Prop_fdpe_C_Q)         0.128     0.128 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[27]_P/Q
+                         net (fo=3, routed)           0.122     0.250    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[27]_P_n_0
+    SLICE_X12Y86         FDCE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[27]_C/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[29]_C/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[29]_P/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.258ns  (logic 0.164ns (63.515%)  route 0.094ns (36.485%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y88          FDCE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[29]_C/C
+    SLICE_X6Y88          FDCE (Prop_fdce_C_Q)         0.164     0.164 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[29]_C/Q
+                         net (fo=3, routed)           0.094     0.258    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[29]_C_n_0
+    SLICE_X7Y88          FDPE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[29]_P/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[20]_P/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[20]_C/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.265ns  (logic 0.141ns (53.235%)  route 0.124ns (46.765%))
+  Logic Levels:           1  (FDPE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y86         FDPE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[20]_P/C
+    SLICE_X13Y86         FDPE (Prop_fdpe_C_Q)         0.141     0.141 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[20]_P/Q
+                         net (fo=3, routed)           0.124     0.265    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[20]_P_n_0
+    SLICE_X12Y86         FDCE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[20]_C/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[3]_C/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[3]_P/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.273ns  (logic 0.186ns (68.106%)  route 0.087ns (31.894%))
+  Logic Levels:           2  (FDCE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y78          FDCE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[3]_C/C
+    SLICE_X7Y78          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[3]_C/Q
+                         net (fo=2, routed)           0.087     0.228    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[3]_C_n_0
+    SLICE_X6Y78          LUT3 (Prop_lut3_I2_O)        0.045     0.273 r  Inst_FSM/FSM_Master/cantidad_prev[3]_i_1/O
+                         net (fo=4, routed)           0.000     0.273    Inst_FSM/FSM_Master/cantidad[3]
+    SLICE_X6Y78          FDPE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[3]_P/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[5]_C/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[5]_P/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.273ns  (logic 0.186ns (68.106%)  route 0.087ns (31.894%))
+  Logic Levels:           2  (FDCE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y79          FDCE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[5]_C/C
+    SLICE_X7Y79          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[5]_C/Q
+                         net (fo=2, routed)           0.087     0.228    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[5]_C_n_0
+    SLICE_X6Y79          LUT3 (Prop_lut3_I2_O)        0.045     0.273 r  Inst_FSM/FSM_Master/cantidad_prev[5]_i_1/O
+                         net (fo=4, routed)           0.000     0.273    Inst_FSM/FSM_Master/cantidad[5]
+    SLICE_X6Y79          FDPE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[5]_P/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[28]_C/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[28]_P/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.274ns  (logic 0.141ns (51.546%)  route 0.133ns (48.454%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y87          FDCE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[28]_C/C
+    SLICE_X4Y87          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[28]_C/Q
+                         net (fo=3, routed)           0.133     0.274    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[28]_C_n_0
+    SLICE_X4Y88          FDPE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[28]_P/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[17]_P/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[17]_C/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.280ns  (logic 0.164ns (58.514%)  route 0.116ns (41.486%))
+  Logic Levels:           1  (FDPE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y88         FDPE                         0.000     0.000 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[17]_P/C
+    SLICE_X10Y88         FDPE (Prop_fdpe_C_Q)         0.164     0.164 r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[17]_P/Q
+                         net (fo=3, routed)           0.116     0.280    Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[17]_P_n_0
+    SLICE_X11Y88         FDCE                                         r  Inst_FSM/FSM_Master/i_cantidad_a_devolver_reg[17]_C/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

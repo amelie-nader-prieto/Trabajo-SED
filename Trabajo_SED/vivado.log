@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Jan 24 00:10:49 2025
-# Process ID: 11088
+# Start of session at: Fri Jan 24 09:04:33 2025
+# Process ID: 2608
 # Current directory: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12752 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10376 C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.xpr
 # Log file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/vivado.log
 # Journal file: C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED\vivado.jou
 # Running On        :LAPTOP-D1CFJ21I
@@ -19,10 +19,10 @@
 # Host memory       :8266 MB
 # Swap memory       :6979 MB
 # Total Virtual     :15245 MB
-# Available Virtual :5949 MB
+# Available Virtual :3740 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpININFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_project C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -108,35 +108,178 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Common 17-344] 'open_project' was cancelled
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 00:27:01 2025...
-u670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project: Time (s): cpu = 00:01:18 ; elapsed = 00:00:46 . Memory (MB): peak = 1494.082 ; gain = 450.281
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/decoder.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 1504.215 ; gain = 456.984
 update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+Wexit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 10:01:14 2025...
+-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-reset_run synth_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
-INFO: [Project 1-1161] Replacing file C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp with file C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/top.dcp
-launch_runs synth_1 -jobs 4
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
-ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\decodificador_moneda.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\contadordemonedas.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\entero_bcd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\control_display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\irene\Desktop\2023-2024\Info\Trabajo-SED\Trabajo_SED\Trabajo_SED.srcs\sources_1\imports\new\display.vhd:]
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 00:29:29 2025...
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 10:01:04 2025...
