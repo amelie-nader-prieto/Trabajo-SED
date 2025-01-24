@@ -26,13 +26,18 @@ architecture Behavioral of top is
     signal int_sync_contador : std_logic_vector(3 downto 0);
 
 
-COMPONENT boton_reset
-       PORT (
-             CLK: IN std_logic ;
-            reset: in std_logic ;
-            salida_reset: out std_logic
-        );
-    END COMPONENT;
+COMPONENT tratamiento_entradas is
+    generic(N:positive:=3);
+    port(
+        clk : IN std_logic;
+        rst       : IN std_logic;                             
+        interruptor:IN std_logic_vector (N downto 0);
+        in_pulsadores:IN std_logic_vector (N-2 downto 0);
+        rst_syn       : out std_logic;
+        interruptor_syn:OUT std_logic_vector (N downto 0);
+        in_pulsadores_syn:OUT std_logic_vector (N-2 downto 0)
+    );
+end component;
  
 COMPONENT control_display IS
     PORT (
@@ -44,13 +49,6 @@ COMPONENT control_display IS
              
     );
 END COMPONENT; 
- COMPONENT interruptores
-    PORT (
-       clk:in std_logic;
-        interruptor_asyn: in std_logic_vector;
-        interruptor_syn: out std_logic_vector         
-);
-END COMPONENT;  
 
 component FSM is
     Port ( sw : in STD_LOGIC_VECTOR (3 downto 0);
@@ -71,23 +69,20 @@ COMPONENT CONTADOR_DE_MONEDAS
      total: out integer range 0 to 100
 );
 END COMPONENT; 
-COMPONENT pulsadores
-    PORT (
-        CLK: IN std_logic ;
-        pulsador: in std_logic_vector(1 downto 0);
-        salida_pulsador: out std_logic_vector(1 downto 0)  
-);
-END COMPONENT;
 
 
 begin
 
-  Inst_boton_reset: boton_reset
+
+    Inst_tratamiento_entradas:tratamiento_entradas
         PORT MAP (
           CLK=>clk,
-          reset=>rst,
-          salida_reset=>reset
-          
+          rst=>rst,
+          rst_syn=>reset,
+          interruptor=>interruptor,
+          in_pulsadores=>in_pulsadores,
+          interruptor_syn=>int_sync,
+          in_pulsadores_syn =>puls
         );
   Inst_control_display:control_display
         PORT MAP (
@@ -95,12 +90,6 @@ begin
         numero=>imp_tot,         
         segmentos=>segmentos,      
          digsel =>digsel
-        );
-  Inst_interruptores: interruptores
-        PORT MAP (
-          clk=>clk,
-        interruptor_asyn=>interruptor,
-        interruptor_syn=> int_sync   
         );
   Inst_FSM: FSM
         PORT MAP (
@@ -121,14 +110,6 @@ begin
          enable=>act_cont,
          sw_in=>int_sync_contador,
          total=>imp_tot
-        );
-     Inst_pulsadores: pulsadores
-      PORT MAP (
-         
-        CLK=>clk,
-        pulsador=>in_pulsadores,
-        salida_pulsador=>puls
-                                                                
         );
 
     reg_entrada_contador : process(clk)

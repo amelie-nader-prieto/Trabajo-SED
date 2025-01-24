@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.runs/synth_1/top.tcl"
+  variable script "C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,42 +56,39 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/.Xil/Vivado-14856-LAPTOP-D1CFJ21I/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.cache/wt [current_project]
-set_property parent.project_path C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.cache/wt [current_project]
+set_property parent.project_path C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/irene/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/sergi/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.cache/ip [current_project]
+set_property ip_output_repo c:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd
-  C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/CONTADOR_DE_MONEDAS.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/FSM_principal.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/SYNCHRNZR.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/boton_reset.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/contadordemonedas.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/control_display.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/decodificador_moneda.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/devolver_el_dinero.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/display.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/edgedtctr.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/imports/new/entero_bcd.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/interruptores.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/pulsadores.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/tratamiento_entradas.vhd
+  C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/sources_1/new/top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,12 +99,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/irene/Desktop/2023-2024/Info/Trabajo-SED/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/sergi/Downloads/SED/Lab/Lab_sed/Trabajo/Trabajo_SED/Trabajo_SED.srcs/utils_1/imports/synth_1/devolver_el_dinero.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
